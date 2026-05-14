@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project_name }} - Hooby Solutions{% endblock %}
+
+{% block content %}
+    <section class="hero product-hero">
+        <h1>{{ project_name }}</h1>
+        <p>{{ project_description }}</p>
+    </section>
+    <section class="documents">
+        <h2>Documents</h2>
+        <ul class="document-grid">
+            {% for doc in doc_types %}
+                <li class="document-card">
+                    <a href="/{{ project }}/{{ doc }}">{{ doc_type_names[doc] }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="readme">
+        <h2>README</h2>
+        <div class="readme-content fade-in">
+        {% include readme_template %}
+        </div>
+    </section>
+{% endblock %}
