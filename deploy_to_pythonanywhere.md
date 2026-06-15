@@ -1,4 +1,4 @@
-# Deployment Guide for Hooby Solutions Homepage to PythonAnywhere
+# Deployment Guide for hoobyLab Homepage to PythonAnywhere
 
 ## Prerequisites
 - A PythonAnywhere account (free tier should suffice for basic use).

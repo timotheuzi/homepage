@@ -1,8 +1,8 @@
-# User Guide for Hooby Solutions Homepage
+# User Guide for hoobyLab Homepage
 
 ## Introduction
 
-This guide provides instructions on how to use and navigate the Hooby Solutions homepage web application.
+This guide provides instructions on how to use and navigate the hoobyLab homepage web application.
 
 ## Accessing the Application
 
@@ -11,7 +11,7 @@ This guide provides instructions on how to use and navigate the Hooby Solutions 
 
 ## Navigation
 
-- **Home**: Overview of Hooby Solutions and list of products.
+- **Home**: Overview of hoobyLab and list of products.
 - **Product Pages**: Click on a product name to view its details and document links.
 - **Documents**: On each product page, click links to view README, User Guide, License, or Privacy Policy (if available).
 
@@ -22,4 +22,4 @@ This guide provides instructions on how to use and navigate the Hooby Solutions 
 
 ## Contact
 
-For support, contact Hooby Solutions support team.
+For support, contact hoobyLab support team.

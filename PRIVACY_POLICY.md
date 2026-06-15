@@ -1,8 +1,8 @@
-# Privacy Policy for Hooby Solutions Homepage
+# Privacy Policy for hoobyLab Homepage
 
 ## Introduction
 
-Hooby Solutions values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
+hoobyLab values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
 
 ## Information We Collect
 

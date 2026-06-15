@@ -1,4 +1,4 @@
-"""Flask application for Hooby Solutions homepage."""
+"""Flask application for hoobyLab homepage."""
 
 import argparse
 import os
@@ -120,7 +120,7 @@ def document(project, doc_type):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Hooby Solutions Homepage Flask Application'
+        description='hoobyLab Homepage Flask Application'
     )
     parser.add_argument(
         '--port', type=int, default=5000,
