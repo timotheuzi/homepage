@@ -28,4 +28,4 @@ We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact privacy@hoobysolutions.com.
+For questions, contact privacy@hoobyLab.com.
