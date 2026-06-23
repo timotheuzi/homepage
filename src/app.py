@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 PROJECTS = [
     'dumb_phone',
-    'darkness',
+    'darknesses',
     'flutter-lab',
     'zombieTim'
 ]
@@ -18,7 +18,7 @@ PROJECTS = [
 # Map project slugs to their display names
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
-    'darkness': 'Darkness BBS',
+    'darknesses': 'Darknesses BBS',
     'flutter-lab': 'Hooby Lab',
     'zombieTim': 'Zombie Tim'
 }
@@ -26,7 +26,7 @@ PROJECT_NAMES = {
 # Map project slugs to their descriptions
 PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
-    'darkness': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
+    'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
     'flutter-lab': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
     'zombieTim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!'
 }
@@ -34,9 +34,14 @@ PROJECT_DESCRIPTIONS = {
 # Map project slugs to their template name prefix
 TEMPLATE_PREFIXES = {
     'dumb_phone': 'dumb_phone',
-    'darkness': 'darkness',
+    'darknesses': 'darknesses',
     'flutter-lab': 'flutter_lab',
     'zombieTim': 'zombie_tim'
+}
+
+# Map project slugs to live links
+PROJECT_LINKS = {
+    'darknesses': 'https://darknesses.pythonanywhere.com'
 }
 
 DOC_TYPES = {
@@ -82,6 +87,7 @@ def product(project):
                            project=project,
                            project_name=PROJECT_NAMES.get(project, project),
                            project_description=PROJECT_DESCRIPTIONS.get(project, ''),
+                           project_link=PROJECT_LINKS.get(project),
                            readme_template=readme_template,
                            doc_types=DOC_TYPES.keys(),
                            doc_type_names=DOC_TYPE_NAMES)
