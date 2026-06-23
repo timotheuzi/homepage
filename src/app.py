@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 PROJECTS = [
     'dumb_phone',
-    'flutter-gangwars',
+    'darkness',
     'flutter-lab',
     'zombieTim'
 ]
@@ -18,7 +18,7 @@ PROJECTS = [
 # Map project slugs to their display names
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
-    'flutter-gangwars': 'Gangwars',
+    'darkness': 'Darkness BBS',
     'flutter-lab': 'Hooby Lab',
     'zombieTim': 'Zombie Tim'
 }
@@ -26,7 +26,7 @@ PROJECT_NAMES = {
 # Map project slugs to their descriptions
 PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
-    'flutter-gangwars': 'A cross-platform Flutter adaptation of the classic Gangwar game, now available on Android, iOS, Linux, Windows, macOS, and Web.',
+    'darkness': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
     'flutter-lab': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
     'zombieTim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!'
 }
@@ -34,7 +34,7 @@ PROJECT_DESCRIPTIONS = {
 # Map project slugs to their template name prefix
 TEMPLATE_PREFIXES = {
     'dumb_phone': 'dumb_phone',
-    'flutter-gangwars': 'gangwars',
+    'darkness': 'darkness',
     'flutter-lab': 'flutter_lab',
     'zombieTim': 'zombie_tim'
 }
