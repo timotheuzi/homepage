@@ -1,8 +1,8 @@
-# autarkyLabs Homepage
+# autarkylabs Homepage
 
 ## Overview
 
-Python-based web application serving as the homepage for autarkyLabs, a computer software and services company.
+Python-based web application serving as the homepage for autarkylabs, a computer software and services company.
 
 ## Features
 

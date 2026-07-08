@@ -1,4 +1,4 @@
-# Deployment Guide for autarkyLabs Homepage to PythonAnywhere
+# Deployment Guide for autarkylabs Homepage to PythonAnywhere
 
 ## Prerequisites
 - A PythonAnywhere account (free tier should suffice for basic use).
@@ -15,11 +15,11 @@
    - Click "Add a new web app".
    - Select "Flask" as the framework.
    - Choose Python 3.10 or compatible version.
-   - Set the project path, e.g., `/home/autarkyLabs/homepage/src/app.py`.
+   - Set the project path, e.g., `/home/autarkylabs/homepage/src/app.py`.
 
 3. **Upload Code**:
    - Use the "Files" tab to upload your project files, or clone from Git:
-     - In a Bash console: `git clone http://mofo-jackson:6009/autarkyLabs/homepage.git`.
+     - In a Bash console: `git clone http://mofo-jackson:6009/autarkylabs/homepage.git`.
    - Ensure the working directory matches your setup.
 
 4. **Configure WSGI**:
@@ -28,7 +28,7 @@
 
 5. **Static Files**:
    - In "Static files" section:
-     - URL: `/static/`, Directory: `/home/autarkyLabs/homepage/src/static`.
+     - URL: `/static/`, Directory: `/home/autarkylabs/homepage/src/static`.
 
 6. **Install Dependencies**:
    - In a Bash console: `pip install --user -r requirements.txt`.
@@ -40,7 +40,7 @@
    - Click "Reload" in the Web tab.
 
 9. **Access**:
-   - Visit `autarkyLabs.pythonanywhere.com`.
+   - Visit `autarkylabs.pythonanywhere.com`.
    - Editor at `/admin/about` (add authentication in production).
 
 ## Notes
