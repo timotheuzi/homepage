@@ -1,8 +1,8 @@
-# User Guide for autarky Homepage
+# User Guide for autarkyLabs Homepage
 
 ## Introduction
 
-This guide provides instructions on how to use and navigate the autarky homepage web application.
+This guide provides instructions on how to use and navigate the autarkyLabs homepage web application.
 
 ## Accessing the Application
 
@@ -11,7 +11,7 @@ This guide provides instructions on how to use and navigate the autarky homepage
 
 ## Navigation
 
-- **Home**: Overview of autarky and list of products.
+- **Home**: Overview of autarkyLabs and list of products.
 - **Product Pages**: Click on a product name to view its details and document links.
 - **Documents**: On each product page, click links to view README, User Guide, License, or Privacy Policy (if available).
 
@@ -22,4 +22,4 @@ This guide provides instructions on how to use and navigate the autarky homepage
 
 ## Contact
 
-For support, contact autarky support team.
+For support, contact autarkyLabs support team.

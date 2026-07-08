@@ -5,8 +5,8 @@ import os
 
 # Try multiple possible project locations
 possible_paths = [
-    '/home/autarky/homepage/src',
-    '/home/autarky/src',
+    '/home/autarkyLabs/homepage/src',
+    '/home/autarkyLabs/src',
 ]
 
 for path in possible_paths:
