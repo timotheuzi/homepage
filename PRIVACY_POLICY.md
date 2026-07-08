@@ -1,8 +1,8 @@
-# Privacy Policy for hoobyLab Homepage
+# Privacy Policy for autarky Homepage
 
 ## Introduction
 
-hoobyLab values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
+autarky values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
 
 ## Information We Collect
 
@@ -28,4 +28,4 @@ We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact privacy@hoobyLab.com.
+For questions, contact privacy@autarky.com.

@@ -1,8 +1,8 @@
-# hoobyLab Homepage
+# autarky Homepage
 
 ## Overview
 
-Python-based web application serving as the homepage for hoobyLab, a computer software and services company.
+Python-based web application serving as the homepage for autarky, a computer software and services company.
 
 ## Features
 
