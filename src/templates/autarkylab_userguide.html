@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutarkyLab - User Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container document-content">
+    <h1>AutarkyLab - User Guide 📘</h1>
+    <p><strong>Package Name:</strong> <code>com.autarky.lab</code><br>
+    <strong>Version:</strong> 1.0.0+1</p>
+    <p>Welcome to the <strong>AutarkyLab</strong> user guide. This document provides a comprehensive overview of the application's features, how to interpret the data, and how to maximize your security posture using our tools.</p>
+    
+    <h2>📋 Table of Contents</h2>
+    <ol>
+        <li><a href="#1-introduction">Introduction</a></li>
+        <li><a href="#2-getting-started">Getting Started</a></li>
+        <li><a href="#3-the-dashboard">The Dashboard</a></li>
+        <li><a href="#4-device-discovery--management">Device Discovery & Management</a></li>
+        <li><a href="#5-understanding-threats">Understanding Threats</a></li>
+        <li><a href="#6-hardware-sensor-monitor">Hardware Sensor Monitor</a></li>
+        <li><a href="#7-ai-anomaly-detection">AI Anomaly Detection</a></li>
+        <li><a href="#8-file-system-scanner">File System Scanner</a></li>
+        <li><a href="#9-network-security">Network Security</a></li>
+        <li><a href="#10-system-monitor">System Monitor</a></li>
+        <li><a href="#11-radio-frequency-monitor">Radio Frequency Monitor</a></li>
+        <li><a href="#12-logs">Logs</a></li>
+        <li><a href="#13-advanced-features">Advanced Features</a></li>
+        <li><a href="#14-troubleshooting">Troubleshooting</a></li>
+    </ol>
+    
+    <h2>1. Introduction</h2>
+    <p>AutarkyLab is a multi-platform security suite providing real-time monitoring of your network, Bluetooth environment, physical hardware sensors, file system, system resources, and radio frequencies to protect you from digital and physical intrusions. It includes AI-driven learning for threat patterns.</p>
+    
+    <h2>2. Getting Started</h2>
+    <p>When you first launch the application, it will:</p>
+    <ul>
+        <li>Request location and Bluetooth permissions.</li>
+        <li>Perform an initial scan for devices and threats.</li>
+        <li>Initialize sensors and services.</li>
+    </ul>
+    <p><strong>Initial Setup Tip</strong>: Navigate to the Devices tab to review discovered devices. Use the "Trust" button for known devices to reduce false positives. After the first search, nearby Bluetooth objects should be detected in the Bluetooth section of the dashboard.</p>
+    
+    <h2>3. The Dashboard</h2>
+    <p>The Dashboard is your command center:</p>
+    <ul>
+        <li><strong>Status Header</strong>: Shows "SYSTEM SECURE" in green if no high-severity threats, or "THREATS DETECTED" in red with count.</li>
+        <li><strong>System Statistics</strong>: Cards for total Devices, Attacks, Network devices, Bluetooth devices. Tap to view details.</li>
+        <li><strong>Recent Threats</strong>: List of the 5 most recent threats.</li>
+        <li><strong>Bottom Navigation</strong>: Access Sensors, Security, System, and More (Filesystem Scanner, Radio Monitor, Logs).</li>
+        <li><strong>Actions</strong>: Toggle theme, refresh scan.</li>
+    </ul>
+    <p>Pull down to refresh the dashboard.</p>
+    
+    <h2>4. Device Discovery & Management</h2>
+    <p>Accessed via stats cards or navigation, this screen lists discovered devices filtered by type (All, Network, Bluetooth & AirTags):</p>
+    <ul>
+        <li>Devices show name, IP/MAC, RSSI, last seen.</li>
+        <li>For AirTags, flagged specially.</li>
+        <li>Controls: Trust (mark as known), Block.</li>
+        <li>Refresh to rescan.</li>
+    </ul>
+    
+    <h2>5. Understanding Threats</h2>
+    <p>Threats are logged and categorized by severity (High, Medium, Low).</p>
+    <ul>
+        <li>Access full log via Attacks stat card or More > Logs (threat-specific).</li>
+        <li>Filter by date using calendar icon.</li>
+        <li>Each threat card shows description, severity, timestamp.</li>
+        <li>Clear logs if needed.</li>
+    </ul>
+    
+    <h2>6. Hardware Sensor Monitor</h2>
+    <p>Accessed via bottom nav "Sensors". Displays real-time data from device sensors:</p>
+    <ul>
+        <li>Accelerometer (X,Y,Z m/s²)</li>
+        <li>Gyroscope (X,Y,Z rad/s)</li>
+        <li>Magnetometer (X,Y,Z μT)</li>
+        <li>Battery Level (%)</li>
+        <li>Battery State</li>
+        <li>Location (Lat, Lon GPS)</li>
+    </ul>
+    <p>Monitors for physical intrusions via movement or environmental changes.</p>
+    
+    <h2>7. AI Anomaly Detection</h2>
+    <p>The AI service learns threat patterns over time:</p>
+    <ul>
+        <li>Analyzes network and application data for anomalies.</li>
+        <li>Learns from detections, improving confidence scores.</li>
+        <li>Matches against learned patterns for analysis.</li>
+        <li>Provides confidence level and recommendations.</li>
+        <li>Patterns can be verified as malicious or benign to improve accuracy.</li>
+        <li>No dedicated screen; integrated into scans and analyses.</li>
+    </ul>
+    
+    <h2>8. File System Scanner</h2>
+    <p>Accessed via More > Filesystem Scanner. Scans for suspicious files:</p>
+    <ul>
+        <li>Header shows count by risk (Low, Medium, High), total files/size, current path if scanning.</li>
+        <li>Progress bar during scan.</li>
+        <li>Results list with path, reason, size, modified date, risk level.</li>
+        <li>Select files with checkboxes, delete selected or all.</li>
+        <li>Tap for details (full path, etc.).</li>
+        <li>Refresh to rescan.</li>
+    </ul>
+    <p><strong>⚠️ Important</strong>: Verify results before deleting; may impact performance.</p>
+    
+    <h2>9. Network Security</h2>
+    <p>Accessed via bottom nav "Security". Tabs for Scanner, Report, Logs:</p>
+    <ul>
+        <li><strong>Scanner</strong>: Start/Stop a full automated scan of the local network. Progress bar shows current task and completion percentage.</li>
+        <li><strong>Report</strong>: Summary of the latest scan, including total open ports, security tests run, and issues found. Lists specific open ports with vulnerabilities and web security test results (XSS, SQL Injection, etc.).</li>
+        <li><strong>Logs</strong>: Historical log entries specifically from the network security service.</li>
+    </ul>
+    <p>Protects against malicious traffic and vulnerabilities using automated reconnaissance and testing.</p>
+    
+    <h2>10. System Monitor</h2>
+    <p>Accessed via bottom nav "System". Monitors performance and health:</p>
+    <ul>
+        <li>System Information: OS, Architecture, Hostname, CPU Cores, Last Updated.</li>
+        <li>Memory Usage: Used/Total GB, percentage bar.</li>
+        <li>Battery Status: Level %, State, bar.</li>
+        <li>Network Information: IP, MAC, Active Connections.</li>
+        <li>Network Connections: List with local/remote addr, protocol, status.</li>
+        <li>Statistics: History Entries, Avg Memory/Battery %.</li>
+    </ul>
+    <p>Refresh for latest data.</p>
+    <p><strong>⚠️ Important</strong>: Monitoring may consume resources; adjust frequency if needed.</p>
+    
+    <h2>11. Radio Frequency Monitor</h2>
+    <p><strong>Coming Soon</strong> - This feature is currently in development and will be available in a future update.</p>
+    <p>Will enable monitoring of radio frequencies for threats using Software Defined Radio (SDR) hardware.</p>
+    
+    <h2>12. Logs</h2>
+    <p>Accessed via More > Logs. View system logs:</p>
+    <ul>
+        <li>Filter by date using calendar.</li>
+        <li>Clear all logs.</li>
+        <li>Each log shows message, timestamp, source, level (DEBUG, INFO, WARN, ERROR) with color-coded chips.</li>
+    </ul>
+    <p>Separate from threat logs.</p>
+    
+    <h2>13. Advanced Features</h2>
+    <ul>
+        <li>AI learning from detections to improve anomaly detection.</li>
+        <li>Dart-based port scanning and app testing (no external tools like Nmap required).</li>
+        <li>Sensor integration for physical security.</li>
+        <li>Radio Frequency Monitor (Coming Soon) for RF surveillance.</li>
+    </ul>
+    <p>On rooted devices, additional capabilities may be available.</p>
+    
+    <h2>14. Troubleshooting</h2>
+    <ul>
+        <li><strong>No Devices Detected</strong>: Ensure Bluetooth/WiFi enabled, permissions granted, refresh scan.</li>
+        <li><strong>Sensor Data Missing</strong>: Check location/sensor permissions, GPS enabled.</li>
+        <li><strong>Scan Failed</strong>: Ensure network connectivity, correct target/ports.</li>
+        <li><strong>High Resource Usage</strong>: Reduce scan frequencies, close background processes.</li>
+        <li><strong>File Scanner Errors</strong>: Check storage permissions, available space.</li>
+        <li><strong>Logs Empty</strong>: Run scans to generate logs.</li>
+    </ul>
+    <p>For persistent issues, clear app data or reinstall.</p>
+    
+    <h2>📋 Legal & Privacy Notice</h2>
+    <h3>Ownership & Liability</h3>
+    <p>This application is wholly owned and operated by <strong>AutarkyLab</strong> and <strong>timotheuzi@hotmail.com</strong>. By using this software, you acknowledge and agree to the following:</p>
+    <p><strong>No Guarantees</strong>: This product is provided "as-is" with no guarantees of:</p>
+    <ul>
+        <li>Security effectiveness or protection capabilities</li>
+        <li>Accuracy of threat detection</li>
+        <li>Compatibility with all devices or systems</li>
+        <li>Performance under all conditions</li>
+        <li>Complete protection against all security threats</li>
+        <li>File system scanner accuracy or completeness</li>
+        <li>System monitor precision or reliability</li>
+        <li>Radio frequency detection accuracy</li>
+    </ul>
+    <p><strong>Zero Liability</strong>: AutarkyLab and timotheuzi@hotmail.com shall not be held responsible for:</p>
+    <ul>
+        <li>Any security breaches or data loss</li>
+        <li>False positives or false negatives in threat detection</li>
+        <li>System damage or performance issues</li>
+        <li>Any consequences resulting from the use or misuse of this application</li>
+        <li>Any legal issues arising from the use of this software</li>
+        <li>File system scanner results or recommendations</li>
+        <li>System monitor accuracy or optimization suggestions</li>
+        <li>Radio monitor detections</li>
+    </ul>
+    <p><strong>User Responsibility</strong>: You assume full responsibility for:</p>
+    <ul>
+        <li>The security of your systems and data</li>
+        <li>Proper configuration and use of this software</li>
+        <li>Ensuring compliance with local laws and regulations</li>
+        <li>Any decisions made based on the application's output</li>
+        <li>Verifying file system scanner results before taking action</li>
+        <li>Interpreting and acting on system monitor recommendations</li>
+        <li>Handling radio frequency detections</li>
+    </ul>
+    </div>
+<div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
+</body>
+</html>

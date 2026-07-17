@@ -11,7 +11,7 @@ app = Flask(__name__)
 PROJECTS = [
     'dumb_phone',
     'darknesses',
-    'flutter-lab',
+    'autarkylab',
     'zombieTim'
 ]
 
@@ -19,7 +19,7 @@ PROJECTS = [
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
     'darknesses': 'Darknesses BBS',
-    'flutter-lab': 'Hooby Lab',
+    'autarkylab': 'autarky Lab',
     'zombieTim': 'Zombie Tim'
 }
 
@@ -27,7 +27,7 @@ PROJECT_NAMES = {
 PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
     'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
-    'flutter-lab': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
+    'autarkylab': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
     'zombieTim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!'
 }
 
@@ -35,7 +35,7 @@ PROJECT_DESCRIPTIONS = {
 TEMPLATE_PREFIXES = {
     'dumb_phone': 'dumb_phone',
     'darknesses': 'darknesses',
-    'flutter-lab': 'flutter_lab',
+    'autarkylab': 'autarkylab',
     'zombieTim': 'zombie_tim'
 }
 
