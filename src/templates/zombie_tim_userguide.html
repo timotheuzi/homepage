@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zombie Tim User Guide</title>
+    <title>Zombie Tim - User Guide</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container document-content">
     <h1>🧟 Zombie Tim - User Guide 🧟</h1>
     <p>Welcome to the official user guide for <strong>Zombie Tim</strong>, your favorite undead AI assistant! This guide will help you navigate the gory details of interacting with Tim and making the most of his decaying brain.</p>
+    
     <h2>🚀 Getting Started</h2>
     <p>When you first open the app, you'll be greeted by <strong>Zombie Tim</strong> himself. He might be a bit twitchy, but he's friendly (mostly)!</p>
     <ol>
@@ -17,6 +18,7 @@
         <li><strong>Initialize</strong>: On first run, Tim sets up his "Brain Database" (SQLite) to remember your interactions.</li>
         <li><strong>Start Chatting</strong>: Use the bottom navigation to jump between screens.</li>
     </ol>
+    
     <h2>📱 Main Interface</h2>
     <p>The app has three main screens accessible via the bottom navigation bar:</p>
     <ol>
@@ -24,9 +26,11 @@
         <li><strong>Scan (🔍)</strong>: Tim can help you look through your device's storage or "sniff out" new vocabulary from the internet.</li>
         <li><strong>Settings (⚙️)</strong>: Customize Tim's behavior, manage permissions, and view "Brain Stats."</li>
     </ol>
+    
     <h2>💬 Chatting with Tim</h2>
-    <p>Tim loves to talk, especially about <strong>Brains</strong>, <strong>Technology</strong>, and <strong>Queen Victoria</strong>.</p>
-    <h3>Special Commands</h3>
+    <p>Tim loves to talk, especially about <strong>Brains</strong> and <strong>Technology</strong>.</p>
+    
+    <h3>🧠 Special Commands</h3>
     <p>Type naturally or use specific keywords to trigger Tim's specialized logic:</p>
     <ul>
         <li><code>eat word <word></code>: Tells Tim to look up a specific word and add it to his vocabulary.</li>
@@ -36,38 +40,81 @@
         <li><code>magic 8 ball <question></code>: Ask Tim to predict the future!</li>
         <li><code>clear chat</code>: Wipes Tim's short-term memory.</li>
     </ul>
+    
+    <h3>📝 Personal Assistant (New!)</h3>
+    <p>Tim can now help you manage your decaying life with his new proactive assistant capabilities:</p>
+    
+    <h4>Reminders</h4>
+    <ul>
+        <li><code>remind me to [task] at [time]</code>: Set a reminder for a specific time (e.g., "remind me to eat brains at 3pm").</li>
+        <li><code>remind me to [task] in [duration]</code>: Set a relative reminder (e.g., "remind me to sharpen teeth in 2 hours").</li>
+        <li><code>show reminders</code>: Lists your upcoming reminders.</li>
+    </ul>
+    
+    <h4>Tasks</h4>
+    <ul>
+        <li><code>add task [description] due [date]</code>: Add a new task (e.g., "add task fix the fence due tomorrow").</li>
+        <li><code>complete task [id]</code>: Mark a task as finished.</li>
+        <li><code>show tasks</code>: See your pending tasks.</li>
+        <li><code>overdue tasks</code>: Check what you missed (Tim will judge you).</li>
+    </ul>
+    
+    <h4>Notes</h4>
+    <ul>
+        <li><code>take note [content]</code>: Quickly save a note.</li>
+        <li><code>take note [title]: [content]</code>: Save a note with a specific title.</li>
+        <li><code>find note [query]</code>: Search through your saved notes.</li>
+        <li><code>show notes</code>: List your saved notes.</li>
+    </ul>
+    
     <h3>Interaction Tips</h3>
     <ul>
-        <li><strong>Mention Queen Victoria</strong>: It triggers his utmost respect and perhaps a Victorian-era anecdote.</li>
         <li><strong>Talk about Brains</strong>: He finds it highly engaging.</li>
         <li><strong>Loyalty</strong>: Tim is a loyal subject. Treat him well!</li>
     </ul>
+    
     <h2>🔍 The Scan Screen</h2>
     <p>Use this screen to help Tim "forage" for information on your device or the internet.</p>
+    
     <h3>File Hunting</h3>
     <ul>
         <li><strong>Scan Brains (Internal)</strong>: Scans the app's internal storage.</li>
         <li><strong>Scan Graveyard (External)</strong>: Scans your device's external storage.</li>
         <li><strong>Sniff Directory</strong>: Pick a specific folder for Tim to examine.</li>
     </ul>
+    
     <h3>Vocabulary Feasts</h3>
     <ul>
         <li><strong>Mass Vocabulary Feast</strong>: Tim reaches out to the internet and devours <strong>50 random words</strong> at once to boost his IQ instantly.</li>
     </ul>
+    
     <h2>⚙️ Settings & Stats</h2>
     <ul>
         <li><strong>Clear Brain</strong>: Reset everything Tim has learned.</li>
         <li><strong>Database Size</strong>: See how much space Tim's memories are taking up.</li>
         <li><strong>Status</strong>: Check if Tim is feeling particularly "hungry" or "smart."</li>
     </ul>
+    
+    <h2>🏗 Building from Source</h2>
+    <p>If you are a developer, you can build Zombie Tim using the included <code>Makefile</code>:</p>
+    <ul>
+        <li><code>make android</code>: Build the Release APK.</li>
+        <li><code>make linux</code>: Build the Linux binary.</li>
+        <li><code>make podman-setup</code>: (Linux Hosts) Setup the macOS builder container (Requires Podman and Ansible).</li>
+        <li><code>make build-macos-podman</code>: Build the macOS version using the container.</li>
+        <li><code>make build-ios-podman</code>: Build the iOS version using the container.</li>
+        <li><code>make test</code>: Run the undead test suite.</li>
+    </ul>
+    
     <h2>🆘 Support & Feedback</h2>
     <p>If Tim becomes too "braindead" or encounters an error:</p>
     <ol>
-        <li>Go to <strong>Settings</strong> -> <strong>Clear Knowledge Base</strong> to reset his database.</li>
-        <li>Check the <code>README.md</code> for technical troubleshooting.</li>
+        <li>Go to <strong>Settings</strong> → <strong>Clear Knowledge Base</strong> to reset his database.</li>
+        <li>Check the <a href="/{{ project }}/readme">README.md</a> for technical troubleshooting.</li>
         <li>Contact the creators at <code>timotheuzi@hotmail.com</code>.</li>
     </ol>
-    <p><em>Remember: Tim might be undead, but his passion for clean code is very much alive!</em></p>
+    
+    <p><em>Remember: Tim might be undead, but his passion for clean code is very much alive!</em> 🧟‍♂️💻</p>
     </div>
 <div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
 </body>

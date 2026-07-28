@@ -81,6 +81,7 @@
         <li>Battery Level (%)</li>
         <li>Battery State</li>
         <li>Location (Lat, Lon GPS)</li>
+        <li>Each sensor shows value, unit, timestamp.</li>
     </ul>
     <p>Monitors for physical intrusions via movement or environmental changes.</p>
     
@@ -105,6 +106,7 @@
         <li>Tap for details (full path, etc.).</li>
         <li>Refresh to rescan.</li>
     </ul>
+    <p>Configure scan frequency in settings if available.</p>
     <p><strong>⚠️ Important</strong>: Verify results before deleting; may impact performance.</p>
     
     <h2>9. Network Security</h2>
@@ -130,8 +132,14 @@
     <p><strong>⚠️ Important</strong>: Monitoring may consume resources; adjust frequency if needed.</p>
     
     <h2>11. Radio Frequency Monitor</h2>
-    <p><strong>Coming Soon</strong> - This feature is currently in development and will be available in a future update.</p>
-    <p>Will enable monitoring of radio frequencies for threats using Software Defined Radio (SDR) hardware.</p>
+    <p>Accessed via More > Radio Monitor. Monitors radio frequencies for threats:</p>
+    <ul>
+        <li>Status Header: SDR active or not, last updated, signal alert if detected.</li>
+        <li>SDR Hardware: List detected USB SDR devices (RTL-SDR, HackRF).</li>
+        <li>Monitored Bands: List frequencies being scanned.</li>
+        <li>Surveillance Alert: If Sub-GHz signals detected, warns of possible hidden devices.</li>
+    </ul>
+    <p>Refresh to rescan.</p>
     
     <h2>12. Logs</h2>
     <p>Accessed via More > Logs. View system logs:</p>
@@ -147,7 +155,7 @@
         <li>AI learning from detections to improve anomaly detection.</li>
         <li>Dart-based port scanning and app testing (no external tools like Nmap required).</li>
         <li>Sensor integration for physical security.</li>
-        <li>Radio Frequency Monitor (Coming Soon) for RF surveillance.</li>
+        <li>Software Defined Radio (SDR) integration for RF surveillance.</li>
     </ul>
     <p>On rooted devices, additional capabilities may be available.</p>
     
@@ -158,13 +166,16 @@
         <li><strong>Scan Failed</strong>: Ensure network connectivity, correct target/ports.</li>
         <li><strong>High Resource Usage</strong>: Reduce scan frequencies, close background processes.</li>
         <li><strong>File Scanner Errors</strong>: Check storage permissions, available space.</li>
+        <li><strong>Radio Monitor No SDR</strong>: Connect compatible USB SDR device.</li>
         <li><strong>Logs Empty</strong>: Run scans to generate logs.</li>
     </ul>
     <p>For persistent issues, clear app data or reinstall.</p>
     
     <h2>📋 Legal & Privacy Notice</h2>
+    
     <h3>Ownership & Liability</h3>
     <p>This application is wholly owned and operated by <strong>AutarkyLab</strong> and <strong>timotheuzi@hotmail.com</strong>. By using this software, you acknowledge and agree to the following:</p>
+    
     <p><strong>No Guarantees</strong>: This product is provided "as-is" with no guarantees of:</p>
     <ul>
         <li>Security effectiveness or protection capabilities</li>
@@ -176,6 +187,7 @@
         <li>System monitor precision or reliability</li>
         <li>Radio frequency detection accuracy</li>
     </ul>
+    
     <p><strong>Zero Liability</strong>: AutarkyLab and timotheuzi@hotmail.com shall not be held responsible for:</p>
     <ul>
         <li>Any security breaches or data loss</li>
@@ -187,6 +199,7 @@
         <li>System monitor accuracy or optimization suggestions</li>
         <li>Radio monitor detections</li>
     </ul>
+    
     <p><strong>User Responsibility</strong>: You assume full responsibility for:</p>
     <ul>
         <li>The security of your systems and data</li>
@@ -197,6 +210,103 @@
         <li>Interpreting and acting on system monitor recommendations</li>
         <li>Handling radio frequency detections</li>
     </ul>
+    
+    <h3>Privacy Policy</h3>
+    <p>This application collects and processes the following data:</p>
+    
+    <p><strong>Collected Data</strong>:</p>
+    <ul>
+        <li>Network information (IP addresses, MAC addresses, device names)</li>
+        <li>Bluetooth device information (MAC addresses, signal strength, device types)</li>
+        <li>Hardware sensor data (accelerometer, gyroscope, GPS coordinates, battery)</li>
+        <li>System information (CPU usage, memory usage, battery status, OS details)</li>
+        <li>File system scanner data (file metadata, content analysis, scan results)</li>
+        <li>Network scan data (ports, vulnerabilities, test results)</li>
+        <li>System monitor data (performance metrics, resource usage, connections)</li>
+        <li>Radio frequency data (SDR devices, signals, bands)</li>
+        <li>Application usage logs for debugging purposes</li>
+    </ul>
+    
+    <p><strong>Data Usage</strong>:</p>
+    <ul>
+        <li>All data is processed locally on your device</li>
+        <li><strong>No data is transmitted to external servers or saved outside of your phone.</strong></li>
+        <li>Collected data is used solely for security monitoring and threat detection</li>
+        <li>Sensor data is used to detect physical movement and environmental changes</li>
+        <li>File system scanner data is used for threat identification</li>
+        <li>Network data is used for security testing</li>
+        <li>System monitor data is used for performance optimization</li>
+        <li>Radio data is used for frequency monitoring</li>
+    </ul>
+    
+    <p><strong>Data Storage</strong>:</p>
+    <ul>
+        <li>Threat logs and device information are stored locally</li>
+        <li>File system scanner results are stored until the next scan</li>
+        <li>Network results are maintained for review</li>
+        <li>System monitor historical data is retained for trend analysis</li>
+        <li>Radio detections are logged</li>
+        <li>Users can export logs for analysis or delete them at any time</li>
+        <li>No persistent data is stored beyond the application's runtime unless explicitly saved by the user</li>
+    </ul>
+    
+    <p><strong>Third-Party Access</strong>:</p>
+    <ul>
+        <li>This application does not share data with third parties</li>
+        <li>System permissions are required for security monitoring functionality</li>
+        <li>All data access is transparent and documented in this guide</li>
+    </ul>
+    
+    <p><strong>User Rights</strong>:</p>
+    <ul>
+        <li>Users can view, export, or delete all collected data</li>
+        <li>Users can disable any monitoring feature at any time</li>
+        <li>Users can configure file system scanner depth and frequency</li>
+        <li>Users can adjust system monitor settings and frequency</li>
+        <li>Users can uninstall the application to completely remove all data</li>
+    </ul>
+    
+    <h3>Security Considerations</h3>
+    <ul>
+        <li>This application requires elevated permissions for security monitoring</li>
+        <li>Users should verify the application's integrity before installation</li>
+        <li>Regular updates are recommended for security improvements</li>
+        <li>Users should follow security best practices when configuring the application</li>
+        <li>File system scanning may impact system performance</li>
+        <li>System monitoring consumes additional system resources</li>
+        <li>Radio monitoring requires compatible hardware</li>
+    </ul>
+    
+    <h3>File System Scanner Safety</h3>
+    <ul>
+        <li>Deep file analysis may take significant time on large file systems</li>
+        <li>Users should verify scanner results before taking action</li>
+        <li>File system scanner may produce false positives</li>
+        <li>Users can configure scan depth and frequency</li>
+    </ul>
+    
+    <h3>Network Security Safety</h3>
+    <ul>
+        <li>Users should regularly review scan results</li>
+        <li>Testing may affect live applications</li>
+    </ul>
+    
+    <h3>System Monitor Safety</h3>
+    <ul>
+        <li>Continuous monitoring may impact system performance</li>
+        <li>Users should adjust monitoring frequency based on needs</li>
+        <li>Recommendations should be reviewed before implementation</li>
+        <li>Historical data may consume storage space over time</li>
+    </ul>
+    
+    <h3>Radio Monitor Safety</h3>
+    <ul>
+        <li>Requires SDR hardware for full functionality</li>
+        <li>Signal detections may include false positives</li>
+        <li>Users should verify alerts physically</li>
+    </ul>
+    
+    <p><em>AutarkyLab - Your Security, Your Responsibility.</em></p>
     </div>
 <div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
 </body>
