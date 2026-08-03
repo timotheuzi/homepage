@@ -1,8 +1,8 @@
-# Privacy Policy for autarkylabs Homepage
+# Privacy Policy for Autarky Labs Homepage
 
 ## Introduction
 
-autarkylabs values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
+Autarky Labs values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
 
 ## Information We Collect
 
@@ -28,4 +28,4 @@ We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact privacy@autarkylabs.com.
+For questions, contact privacy@Autarky Labs.com.

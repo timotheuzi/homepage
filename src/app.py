@@ -1,4 +1,4 @@
-"""Flask application for AutarkyLabs homepage."""
+"""Flask application for Autarky Labs homepage."""
 
 import argparse
 import os
@@ -11,7 +11,7 @@ app = Flask(__name__)
 PROJECTS = [
     'dumb_phone',
     'darknesses',
-    'AutarkyLabs',
+    'autarkylabs',
     'zombieTim'
 ]
 
@@ -19,7 +19,7 @@ PROJECTS = [
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
     'darknesses': 'Darknesses BBS',
-    'AutarkyLabs': 'Autarky Labs',
+    'autarkylabs': 'Autarky Labs',
     'zombieTim': 'Zombie Tim'
 }
 
@@ -27,7 +27,7 @@ PROJECT_NAMES = {
 PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
     'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
-    'AutarkyLabs': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
+    'autarkylabs': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
     'zombieTim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!'
 }
 
@@ -35,7 +35,7 @@ PROJECT_DESCRIPTIONS = {
 TEMPLATE_PREFIXES = {
     'dumb_phone': 'dumb_phone',
     'darknesses': 'darknesses',
-    'AutarkyLabs': 'autarkylabs',
+    'autarkylabs': 'autarkylabs',
     'zombieTim': 'zombie_tim'
 }
 
@@ -126,7 +126,7 @@ def document(project, doc_type):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='AutarkyLabs Homepage Flask Application'
+        description='Autarky Labs Homepage Flask Application'
     )
     parser.add_argument(
         '--port', type=int, default=5000,

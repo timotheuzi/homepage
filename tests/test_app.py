@@ -16,7 +16,7 @@ class TestApp(unittest.TestCase):
         """Test the home page."""
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'autarkylabs', response.data)
+        self.assertIn(b'Autarky Labs', response.data)
 
     def test_project_pages(self):
         """Test each project page."""
