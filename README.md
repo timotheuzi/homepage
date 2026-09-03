@@ -1,8 +1,8 @@
-# Autarky Labs Homepage
+# Dark Work Homepage
 
 ## Overview
 
-Python-based web application serving as the homepage for Autarky Labs, a computer software and services company.
+Python-based web application serving as the homepage for Dark Work, a computer software and services company.
 
 ## Features
 

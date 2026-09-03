@@ -1,8 +1,8 @@
-# Privacy Policy for Autarky Labs Homepage
+# Privacy Policy for Dark Work Homepage
 
 ## Introduction
 
-Autarky Labs values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
+Dark Work values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our homepage.
 
 ## Information We Collect
 
@@ -28,4 +28,4 @@ We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact privacy@Autarky Labs.com.
+For questions, contact privacy@darkwork.com.
