@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumb Phone - User Guide - Dark Work</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container document-content">
+    <h1>Dumb Phone User Guide</h1>
+
+    <p>Welcome to Dumb Phone! This guide helps you navigate the features of this network security application, designed to give you total control over your device's connectivity.</p>
+
+    <p><strong>Package Name:</strong> <code>com.dumbphone.dumbphone</code></p>
+
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#firewall-modes">Firewall Modes</a></li>
+        <li><a href="#firewall-rules">Custom Firewall Rules</a></li>
+        <li><a href="#logs-and-activity">Logs and Activity</a></li>
+        <li><a href="#blocklists">Country Blocklists</a></li>
+        <li><a href="#settings">Settings</a></li>
+    </ol>
+
+    <h2>Documentation</h2>
+    <ul>
+        <li><strong><a href="/dumb_phone/privacy">Privacy Policy</a></strong>: Complete privacy policy and data handling information.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="introduction">1. Introduction</h2>
+    <p>Dumb Phone uses Android's VPN Service API to intercept and filter network traffic locally on your device. The app features a modern, beautiful, and <strong>elastic interface</strong> that adapts to any screen size with smooth animations and full dark mode support.</p>
+
+    <p><strong>Multi-Platform Support:</strong></p>
+    <ul>
+        <li><strong>Android</strong>: Full support via native <code>VpnService</code> (Android 6.0+).</li>
+        <li><strong>Linux</strong>: Supported on desktop via <code>iptables</code> integration (Beta).</li>
+    </ul>
+
+    <p><strong>Important:</strong> You must grant <strong>VPN Permission</strong> when prompted for the firewall to function on Android. No data is sent to external servers; all processing is local.</p>
+
+    <h2 id="dashboard">2. Dashboard</h2>
+    <p>The Dashboard is your control center with a clean, modern interface:</p>
+    <ul>
+        <li><strong>Status Cards</strong>: Quickly toggle between Dumb Phone and Soft Firewall modes with beautifully designed cards showing real-time status.</li>
+        <li><strong>Visual Indicators</strong>: Color-coded status chips with animated indicators show Active, Off, or Wait states.</li>
+        <li><strong>Quick Stats</strong>: See real-time counts of <strong>Blocked</strong> and <strong>Allowed</strong> connections.</li>
+        <li><strong>Recent Activity</strong>: A live preview of the latest network events with enhanced visual styling.</li>
+    </ul>
+
+    <h3>Dashboard Features</h3>
+    <ul>
+        <li><strong>Pull to Refresh</strong>: Swipe down on the dashboard to refresh all statistics and data.</li>
+        <li><strong>Mode Cards</strong>: Each firewall mode has its own card with gradient icons, status indicators, and one-tap activation buttons.</li>
+        <li><strong>Error Handling</strong>: Beautiful error cards with clear messaging and easy dismissal.</li>
+    </ul>
+
+    <h2 id="firewall-modes">3. Firewall Modes</h2>
+
+    <h3>Dumb Phone Mode</h3>
+    <p>The most restrictive state. It follows a "Block All" policy.</p>
+    <ul>
+        <li><strong>Behavior</strong>: Blocks all outgoing traffic except for system-critical services.</li>
+        <li><strong>Exceptions</strong>: Phone calls and SMS are permitted.</li>
+        <li><strong>Visual Style</strong>: Orange-themed card with lock icon when active.</li>
+        <li><strong>Best for</strong>: Maximum privacy and focus.</li>
+    </ul>
+
+    <h3>Soft Firewall</h3>
+    <p>A balanced protection mode.</p>
+    <ul>
+        <li><strong>Behavior</strong>: Allows traffic by default but filters it against your <strong>Custom Rules</strong> and <strong>Country Blocklists</strong>.</li>
+        <li><strong>Visual Style</strong>: Blue-themed card with shield icon when active.</li>
+        <li><strong>Best for</strong>: Everyday use with enhanced security.</li>
+    </ul>
+
+    <h3>Mode Management</h3>
+    <ul>
+        <li><strong>Activation</strong>: Tap "Activate Now" to start a firewall mode.</li>
+        <li><strong>Deactivation</strong>: Tap "Deactivate" to stop the mode.</li>
+        <li><strong>Status Indicators</strong>:
+            <ul>
+                <li>🟢 Green: Active and running</li>
+                <li>🔴 Red: Off/inactive</li>
+                <li>🟠 Orange: Wait/toggling state</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2 id="firewall-rules">4. Custom Firewall Rules</h2>
+    <p>Define specific behavior for apps or servers with an intuitive rule management interface:</p>
+    <ul>
+        <li><strong>Rule Types</strong>:
+            <ul>
+                <li><strong>IP Address</strong>: Target specific servers (e.g., <code>192.168.1.1</code>).</li>
+                <li><strong>App Package</strong>: Target specific apps (e.g., <code>com.social.app</code>).</li>
+            </ul>
+        </li>
+        <li><strong>Actions</strong>: Set to <strong>Allow</strong> (green) or <strong>Block</strong> (red).</li>
+        <li><strong>Granularity</strong>: You can specify Ports and Protocols (TCP/UDP) for IP rules.</li>
+        <li><strong>Visual Design</strong>: Rules display with color-coded action indicators, protocol chips, and smooth animations.</li>
+    </ul>
+
+    <h3>Managing Rules</h3>
+    <ul>
+        <li><strong>Add Rules</strong>: Tap the "+" button to create new firewall rules.</li>
+        <li><strong>Toggle Rules</strong>: Use the switch on each rule card to enable/disable without deleting.</li>
+        <li><strong>Delete Rules</strong>: Tap the delete icon to remove a rule permanently.</li>
+        <li><strong>Rule Details</strong>: Each rule shows its type, target, port, protocol, and description.</li>
+    </ul>
+
+    <h2 id="logs-and-activity">5. Logs and Activity</h2>
+    <p>The <strong>Logs</strong> screen provides a transparent history of your device's networking with enhanced visual design:</p>
+    <ul>
+        <li><strong>Filtering</strong>: Search for specific IP addresses or app names with the search bar.</li>
+        <li><strong>Date Range</strong>: View logs from specific days using the calendar date picker.</li>
+        <li><strong>Visual Indicators</strong>:
+            <ul>
+                <li>Red badges for blocked connections</li>
+                <li>Green badges for allowed connections</li>
+            </ul>
+        </li>
+        <li><strong>Details</strong>: Tap any log entry to see comprehensive details including source IP, destination port, protocol, and the process/package responsible.</li>
+    </ul>
+
+    <h3>Log Features</h3>
+    <ul>
+        <li><strong>Clear Logs</strong>: Use the delete icon in the app bar to clear all logs (with confirmation dialog).</li>
+        <li><strong>Refresh</strong>: Tap the floating action button to refresh the log list.</li>
+        <li><strong>Block Count</strong>: See how many times a connection was blocked with the count badge.</li>
+        <li><strong>Timestamps</strong>: All logs show precise timestamps in HH:MM:SS format.</li>
+    </ul>
+
+    <h2 id="blocklists">6. Country Blocklists</h2>
+    <p>Prevent data exfiltration to specific regions or custom IP ranges with a modern, card-based interface:</p>
+    <ul>
+        <li><strong>Continent-Based Protection</strong>: Countries are combined into logical groups based on global regions (<strong>NA, SA, EU, AS, AF, OC</strong>) to streamline management and improve performance.</li>
+        <li><strong>Refresh</strong>: Swipe down on the blocklist screen to refresh connection counts and synchronize data.</li>
+        <li><strong>Sorting</strong>: The list automatically sorts regions by the number of blocked connections (highest first).</li>
+        <li><strong>Parallel Syncing</strong>: The app uses <strong>Parallel Downloads</strong> and <strong>Lazy Loading</strong> for IP ranges. This ensures that large regional datasets are synchronized quickly and efficiently in the background.</li>
+        <li><strong>Notifications</strong>: You will receive a system notification once background updates are complete, keeping you informed of your device's security status.</li>
+        <li><strong>Data Integrity</strong>: A <strong>Self-Healing</strong> mechanism recomputes blocked connection statistics from local logs every few minutes to ensure accuracy.</li>
+        <li><strong>Visual Design</strong>: Icons display clear region acronyms (<strong>NA, SA, EU, AS, AF, OC</strong>) or <strong>P2P</strong> with gradient backgrounds and threat level badges.</li>
+        <li><strong>Custom Entries</strong>: Use the "+" floating action button to add your own blocklist entries with manual IP or CIDR ranges.</li>
+        <li><strong>Details</strong>: Tap any regional card to view a responsive list of included countries, specific IP ranges, and detailed threat metadata.</li>
+    </ul>
+
+    <h3>Regional Categories</h3>
+    <p>Categories are defined by geographical regions to provide intuitive control over global connectivity:</p>
+    <ul>
+        <li>🌎 <strong>North America (NA)</strong>: Includes regions like US and Cuba.</li>
+        <li>🌎 <strong>South America (SA)</strong>: Includes regions like Venezuela.</li>
+        <li>🌍 <strong>Europe (EU)</strong>: Includes over 10 European nations and regional blocks.</li>
+        <li>🌏 <strong>Asia (AS)</strong>: Includes major Asian centers and strategic monitoring zones.</li>
+        <li>🌍 <strong>Africa (AF)</strong>: Includes African nations with specific monitoring requirements.</li>
+        <li>🌏 <strong>Oceania (OC)</strong>: Includes Australia, New Zealand, and surrounding regions.</li>
+    </ul>
+
+    <h3>Blocklist Management</h3>
+    <ul>
+        <li><strong>Toggle Countries</strong>: Use the switch on each card to quickly enable/disable blocking for that country.</li>
+        <li><strong>Search</strong>: Use the search bar to filter countries by name or code.</li>
+        <li><strong>Remove Entries</strong>: In the details dialog, you can remove custom entries from the blocklist.</li>
+    </ul>
+
+    <h2 id="settings">7. Settings</h2>
+    <p>The Settings screen provides comprehensive control with a beautiful card-based layout:</p>
+
+    <h3>VPN Permission</h3>
+    <ul>
+        <li><strong>Status Indicator</strong>: Visual badge shows current VPN permission status (Granted, Pending, Denied).</li>
+        <li><strong>Grant Permission</strong>: One-tap button to request VPN access (not required on Linux).</li>
+        <li><strong>Linux Support</strong>: Clear messaging about iptables-based firewall on Linux platforms.</li>
+    </ul>
+
+    <h3>Blocklist Categories</h3>
+    <ul>
+        <li><strong>Threat Level Toggles</strong>: Enable/disable entire threat level categories (High, Mid, Low) with color-coded switches.</li>
+        <li><strong>Visual Feedback</strong>: Toggle containers change color when active to provide clear visual feedback.</li>
+        <li><strong>Defaults Button</strong>: Restore default threat intelligence settings.</li>
+        <li><strong>Manage List</strong>: Quick link to the blocklist management screen.</li>
+    </ul>
+
+    <h3>Log Retention</h3>
+    <ul>
+        <li><strong>Adjustable Period</strong>: Use the slider to set log retention from 1-30 days.</li>
+        <li><strong>Visual Display</strong>: Current retention period shown in a highlighted badge.</li>
+        <li><strong>Range Indicator</strong>: Clear text shows the valid range (1-30 days).</li>
+    </ul>
+
+    <h3>Quick Actions</h3>
+    <ul>
+        <li><strong>Clear Logs</strong>: Delete all firewall logs with confirmation dialog.</li>
+        <li><strong>Reset All</strong>: Reset all settings, rules, and blocklists to defaults.</li>
+        <li><strong>Visual Design</strong>: Action buttons feature circular icons with color-coded backgrounds.</li>
+    </ul>
+
+    <h3>Additional Settings</h3>
+    <ul>
+        <li><strong>Retention Settings</strong>: Access advanced log retention configuration.</li>
+        <li><strong>Floating Notifications</strong>: All confirmation dialogs use modern floating snackbars with rounded corners.</li>
+    </ul>
+
+    <h2>Tips and Best Practices</h2>
+    <ol>
+        <li><strong>Start with Soft Firewall</strong>: For everyday use, start with Soft Firewall mode and add specific rules as needed.</li>
+        <li><strong>Use Threat Levels</strong>: Enable High and Mid threat blocking for maximum protection with minimal false positives.</li>
+        <li><strong>Review Logs Regularly</strong>: Check the Logs screen periodically to understand your device's network behavior.</li>
+        <li><strong>Custom Rules</strong>: Create specific rules for apps you trust or want to block completely.</li>
+        <li><strong>Privacy First</strong>: Remember that all data stays on your device - no information is ever transmitted externally.</li>
+    </ol>
+
+    <h2>Troubleshooting</h2>
+
+    <h3>VPN Permission Issues</h3>
+    <ul>
+        <li>Ensure you've granted VPN permission when prompted.</li>
+        <li>On Linux, the app uses iptables instead of VPN (no VPN permission needed).</li>
+        <li>Check that no other VPN apps are currently active.</li>
+    </ul>
+
+    <h3>Performance</h3>
+    <ul>
+        <li><strong>Optimized Loading</strong>: Parallel processing and lazy loading ensure minimal battery impact.</li>
+        <li><strong>Initial Install</strong>: On the first launch, the app automatically performs a <strong>one-time database optimization</strong> (wiping old logs and settings) to ensure the grouped protection model operates at peak efficiency.</li>
+        <li><strong>Local Only</strong>: No data leaves your device, eliminating privacy risks and data costs.</li>
+    </ul>
+
+    <h2>Support</h2>
+    <p>For issues, questions, or contributions, refer to the project repository or documentation.</p>
+
+    <hr>
+    <p><em>Classification: Confidential</em></p>
+    </div>
+<div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
+</body>
+</html>

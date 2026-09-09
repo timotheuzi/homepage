@@ -1,8 +1,8 @@
-# User Guide for Autarky Labs Homepage
+# User Guide for Dark Work Homepage
 
 ## Introduction
 
-This guide provides instructions on how to use and navigate the Autarky Labs homepage web application.
+This guide provides instructions on how to use and navigate the Dark Work homepage web application.
 
 ## Accessing the Application
 
@@ -11,7 +11,7 @@ This guide provides instructions on how to use and navigate the Autarky Labs hom
 
 ## Navigation
 
-- **Home**: Overview of Autarky Labs and list of products.
+- **Home**: Overview of Dark Work and list of products.
 - **Product Pages**: Click on a product name to view its details and document links.
 - **Documents**: On each product page, click links to view README, User Guide, License, or Privacy Policy (if available).
 
@@ -22,4 +22,4 @@ This guide provides instructions on how to use and navigate the Autarky Labs hom
 
 ## Contact
 
-For support, contact Autarky Labs support team.
+For support, contact Dark Work support team.

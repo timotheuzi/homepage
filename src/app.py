@@ -12,7 +12,8 @@ PROJECTS = [
     'dumb_phone',
     'darknesses',
     'darkwork',
-    'zombieTim'
+    'zombie_tim',
+    'battle_chess_mobile'
 ]
 
 # Map project slugs to their display names
@@ -20,7 +21,8 @@ PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
     'darknesses': 'Darknesses BBS',
     'darkwork': 'Dark Work',
-    'zombieTim': 'Zombie Tim'
+    'zombie_tim': 'Zombie Tim',
+    'battle_chess_mobile': 'Battle Chess'
 }
 
 # Map project slugs to their descriptions
@@ -28,7 +30,8 @@ PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
     'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
     'darkwork': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
-    'zombieTim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!'
+    'zombie_tim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!',
+    'battle_chess_mobile': 'A visceral, cartoon-style chess game built with Flutter and the Flame engine. Featuring chunky pieces with big personalities and high-impact combat animations.'
 }
 
 # Map project slugs to their template name prefix
@@ -36,7 +39,8 @@ TEMPLATE_PREFIXES = {
     'dumb_phone': 'dumb_phone',
     'darknesses': 'darknesses',
     'darkwork': 'darkwork',
-    'zombieTim': 'zombie_tim'
+    'zombie_tim': 'zombie_tim',
+    'battle_chess_mobile': 'battle_chess_mobile'
 }
 
 # Map project slugs to live links
@@ -81,7 +85,7 @@ def product(project):
 
     prefix = TEMPLATE_PREFIXES.get(project)
     # Try to load the README content template
-    readme_template = f'{prefix}_readme_content.html'
+    readme_template = f'{prefix}/readme_content.html'
 
     return render_template('product.html',
                            project=project,
@@ -112,7 +116,7 @@ def document(project, doc_type):
 
     prefix = TEMPLATE_PREFIXES.get(project)
     suffix = DOC_TYPE_SUFFIXES.get(doc_type)
-    template_name = f'{prefix}_{suffix}.html'
+    template_name = f'{prefix}/{suffix}.html'
 
     try:
         return render_template(template_name,

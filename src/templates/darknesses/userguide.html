@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkness BBS - User Guide - Dark Work</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container document-content">
+    <h1>Darkness BBS — User Guide</h1>
+
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#login-registration">Login & Registration</a></li>
+        <li><a href="#game-commands">Game Commands</a></li>
+        <li><a href="#world-structure">World Structure</a></li>
+        <li><a href="#combat-system">Combat System</a></li>
+        <li><a href="#items-equipment">Items & Equipment</a></li>
+        <li><a href="#character-progression">Character Progression</a></li>
+        <li><a href="#karma-reputation">Karma & Reputation</a></li>
+        <li><a href="#stealth-system">Stealth System</a></li>
+        <li><a href="#drug-addiction">Drug & Addiction System</a></li>
+        <li><a href="#npc-aggression">NPC Aggression & Stalking</a></li>
+        <li><a href="#party-system">Party System</a></li>
+        <li><a href="#mud-client-setup">MUD Client Setup</a></li>
+    </ol>
+
+    <hr>
+
+    <h2 id="overview">Overview</h2>
+    <p><strong>Darkness BBS</strong> is a multi-user, terminal-style cyberpunk RPG inspired by classic BBS games like MajorMUD. Players explore a procedurally generated grid, engage in tactical combat, customize their builds via manual stat training, and compete with other users in a gritty, neon-soaked world.</p>
+
+    <p>Key Features:</p>
+    <ul>
+        <li><strong>Massive Procedural World</strong>: 8 distinct sectors with 200+ rooms.</li>
+        <li><strong>Deep Character Customization</strong>: 10 races and 13 classes with unique abilities and traits.</li>
+        <li><strong>Manual Stat Training</strong>: Earn 1 point per level to spend on specific attributes.</li>
+        <li><strong>Tactical Combat</strong>: PvP support (+/- 3 levels), weapon speed, and elemental damage (fire > air > earth > water > fire).</li>
+        <li><strong>Karma System</strong>: Alignment from -100 (Villain) to +100 (Saint).</li>
+        <li><strong>Stealth System</strong>: Hide and perform backstab attacks with bonus damage.</li>
+        <li><strong>Drug & Addiction</strong>: Temporary stat boosts with dependency risk and withdrawal damage.</li>
+        <li><strong>Leaderboards</strong>: Competitive ranking of the top adventurers and a "Wall of Death".</li>
+        <li><strong>Party System</strong>: Team up with up to 3 players to explore the grid together.</li>
+        <li><strong>AI Bot System</strong>: Autonomous AI players that wander, fight, and interact.</li>
+    </ul>
+
+    <h2 id="getting-started">Getting Started</h2>
+    <ol>
+        <li>Navigate to the terminal in your browser.</li>
+        <li>Click <strong>"Initialize New Profile"</strong> to create a character.</li>
+        <li>Enter a handle (username) and password.</li>
+        <li>Select your <strong>Race</strong> (Augmentation Path) and <strong>Class</strong> (Operational Class).</li>
+        <li>Optionally customize your 6 base stats (STR, INT, WIL, AGI, HEA, CHA) — total must not exceed 80 points.</li>
+        <li>Log in and arrive at <strong>The Neon Hub</strong>, the grid's central safe zone.</li>
+    </ol>
+
+    <h2 id="login-registration">Login & Registration</h2>
+
+    <h3>Races (Augmentation Paths)</h3>
+    <p>Each race grants a specific set of stat modifiers and a unique <strong>Race Trait</strong>:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Race</th>
+                <th>Modifiers</th>
+                <th>Special Trait</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cyborg</strong></td>
+                <td>STR+5, HEA+2, AGI-2, INT+2</td>
+                <td><strong>Cybernetic Resilience</strong>: +10% resistance to debuffs.</td>
+            </tr>
+            <tr>
+                <td><strong>Bio-hacked</strong></td>
+                <td>HEA+5, STR+2, CHA-2</td>
+                <td><strong>Adrenal Efficiency</strong>: 20% faster healing, reduced addiction.</td>
+            </tr>
+            <tr>
+                <td><strong>Android</strong></td>
+                <td>INT+8, WIL+2, CHA-5, HEA-2</td>
+                <td><strong>Systematic Mind</strong>: +15% mana efficiency, mental immunity.</td>
+            </tr>
+            <tr>
+                <td><strong>Mutant</strong></td>
+                <td>Random (+7/-3)</td>
+                <td><strong>Adaptive Biology</strong>: Stats can exceed normal caps by 5.</td>
+            </tr>
+            <tr>
+                <td><strong>Human</strong></td>
+                <td>CHA+10, WIL+5, STR-5, HEA-5</td>
+                <td><strong>Versatile Potential</strong>: Gains 1.5x stat points on level up.</td>
+            </tr>
+            <tr>
+                <td><strong>Void-Walker</strong></td>
+                <td>WIL+12, AGI+5, STR-8, HEA-4</td>
+                <td><strong>Phase Shift</strong>: 10% chance to dodge any attack.</td>
+            </tr>
+            <tr>
+                <td><strong>Synth-Soul</strong></td>
+                <td>INT+15, CHA-10</td>
+                <td><strong>Digital Presence</strong>: +20% stealth effectiveness.</td>
+            </tr>
+            <tr>
+                <td><strong>Orc</strong></td>
+                <td>AGI+10, INT-10, CHA-5</td>
+                <td><strong>Overclocked</strong>: +1 extra attack per combat round.</td>
+            </tr>
+            <tr>
+                <td><strong>Elf</strong></td>
+                <td>AGI+8, WIL+4, HEA-5</td>
+                <td><strong>Ancient Grace</strong>: +10% critical hit chance.</td>
+            </tr>
+            <tr>
+                <td><strong>Goblin</strong></td>
+                <td>CHA+10, AGI+5, STR-8</td>
+                <td><strong>Street Cunning</strong>: +15% chance for extra loot.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Stats Reference</h3>
+    <ul>
+        <li><strong>STR (Strength)</strong>: Physical power. Increases Attack and carrying capacity. Essential for melee classes.</li>
+        <li><strong>AGI (Agility)</strong>: Speed and reflexes. Increases Defense, crit chance, and stealth effectiveness. Key for dodging and Thief/Ninja.</li>
+        <li><strong>HEA (Health)</strong>: Physical resilience. Increases max HP. Vital for survivability.</li>
+        <li><strong>INT (Intelligence)</strong>: Mental acuity. Powers tech, netrunning, and spellcasting. Increases mana for some classes.</li>
+        <li><strong>WIL (Willpower)</strong>: Mental fortitude. Increases max Mana and resistance to mind effects. Core for Priests.</li>
+        <li><strong>CHA (Charisma)</strong>: Social presence. Used by Fixers and Tricksters. Affects NPC interactions and some abilities.</li>
+    </ul>
+
+    <h3>Classes (Operational Classes)</h3>
+    <p>Abilities are learned at levels 1, 5, 10, 15, 20, 25, and 30.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Starting Focus</th>
+                <th>Specialization</th>
+                <th>Gear Restrictions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Street Samurai</strong></td>
+                <td>ATK, STR, AGI</td>
+                <td>Multi-strike Melee</td>
+                <td>All armor, One/Two-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Netrunner</strong></td>
+                <td>INT, Mana</td>
+                <td>System Hacking (Water/Air)</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Techie</strong></td>
+                <td>INT, WIL, DEF</td>
+                <td>Drones & Engineering</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Medie</strong></td>
+                <td>HEA, HP</td>
+                <td>Healing & Detoxification</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Fixer</strong></td>
+                <td>CHA, Money</td>
+                <td>Credit Siphoning & Contracts</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Thief</strong></td>
+                <td>AGI, ATK</td>
+                <td>Stealth & Backstabbing</td>
+                <td>Leather armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Heavy</strong></td>
+                <td>STR, HEA, DEF</td>
+                <td>Tanking & Earth Damage</td>
+                <td>All armor, One/Two-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Psycher</strong></td>
+                <td>WIL, Mana</td>
+                <td>Neural Energy & Mind Control</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Warlock</strong></td>
+                <td>INT, WIL, Mana</td>
+                <td>Debuffs & Chaos</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Priest</strong></td>
+                <td>WIL, HEA, HP</td>
+                <td>Divine Restoration & Air Damage</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Trickster</strong></td>
+                <td>CHA, AGI</td>
+                <td>Luck & Confusion</td>
+                <td>Leather/Light armor, One-handed weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Jade Dragon</strong></td>
+                <td>AGI, STR, DEF</td>
+                <td>Unarmed Martial Arts</td>
+                <td>Light armor only, Jade weapons</td>
+            </tr>
+            <tr>
+                <td><strong>Ninja</strong></td>
+                <td>AGI, ATK</td>
+                <td>Stealth & Thrown Weapons</td>
+                <td>Light armor only, Ninja weapons</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="game-commands">Game Commands</h2>
+
+    <h3>Navigation</h3>
+    <ul>
+        <li><code>N</code>, <code>S</code>, <code>E</code>, <code>W</code>: Movement.</li>
+        <li><code>EXIT</code>: Log out safely.</li>
+    </ul>
+
+    <h3>Information</h3>
+    <ul>
+        <li><code>L</code> / <code>LOOK</code>: Scan sector. <code>LOOK &lt;target&gt;</code>: Examine entity.</li>
+        <li><code>WHO</code>: List active nodes.</li>
+        <li><code>TOP</code>: Top 25 ranking.</li>
+        <li><code>WALL</code>: Top 25 deaths.</li>
+        <li><code>ST</code> / <code>STATUS</code>: Detailed profile.</li>
+        <li><code>I</code> / <code>INVENTORY</code>: List gear.</li>
+        <li><code>HELP</code> / <code>?</code>: Command manual.</li>
+    </ul>
+
+    <h3>Communication</h3>
+    <ul>
+        <li><code>SAY &lt;msg&gt;</code>: Local chat.</li>
+        <li><code>BROADCAST &lt;msg&gt;</code>: Global chat.</li>
+    </ul>
+
+    <h3>Combat & Action</h3>
+    <ul>
+        <li><code>A &lt;target&gt;</code>: Attack one round.</li>
+        <li><code>AA &lt;target&gt;</code>: Auto-attack until victory/defeat.</li>
+        <li><code>&lt;ABILITY&gt; &lt;target&gt;</code>: Use class skill.</li>
+        <li><code>STEALTH</code> / <code>SNEAK</code>: Hide.</li>
+        <li><code>REST</code>: Recover HP/Mana.</li>
+    </ul>
+
+    <h3>Items</h3>
+    <ul>
+        <li><code>USE &lt;item&gt;</code>: Consumables/Drugs.</li>
+        <li><code>GET &lt;item&gt;</code> / <code>DROP &lt;item&gt;</code>: Ground interaction.</li>
+        <li><code>EQUIP &lt;item&gt;</code>: Manage hardware.</li>
+        <li><code>LIST</code> / <code>BUY</code> / <code>SELL</code>: Commerce.</li>
+        <li><code>SELLALL</code>: Sell all unequipped hardware.</li>
+    </ul>
+
+    <h2 id="combat-system">Combat System</h2>
+
+    <h3>Damage & Crits</h3>
+    <p>Damage: <code>max(1, ATK - DEF/2)</code> ± variance. Critical Hits: 2.0x damage. Chance based on AGI (physical) or INT (abilities).</p>
+
+    <h3>Elemental Wheel</h3>
+    <ul>
+        <li><strong>Fire</strong> > <strong>Air</strong> > <strong>Earth</strong> > <strong>Water</strong> > <strong>Fire</strong></li>
+        <li>Strength: 1.5x damage. Weakness: 0.5x damage.</li>
+    </ul>
+
+    <h2 id="party-system">Party System</h2>
+    <ul>
+        <li><code>PARTY CREATE</code>: Start a new party as leader.</li>
+        <li><code>PARTY INVITE &lt;player&gt;</code>: Invite a player.</li>
+        <li><code>PARTY ACCEPT</code>: Join a party.</li>
+        <li><code>PARTY LEAVE</code>: Exit your current party.</li>
+        <li><code>PARTY STATUS</code>: See current members.</li>
+    </ul>
+
+    <h2 id="mud-client-setup">MUD Client Setup</h2>
+    <p>Darkness BBS supports traditional MUD clients like Mudlet, MUSHclient, and any standard Telnet client.</p>
+
+    <h3>Connecting with a MUD Client</h3>
+    <h4>Mudlet</h4>
+    <ol>
+        <li>Open Mudlet</li>
+        <li>Click <strong>"Connect"</strong> → <strong>"Connect to..."</strong></li>
+        <li>Enter details: Host: <code>localhost</code>, Port: <code>4000</code>, Name: <code>Darkness BBS</code></li>
+        <li>Uncheck <strong>"Use SSL/TLS"</strong></li>
+        <li>Click <strong>"Connect"</strong></li>
+    </ol>
+
+    <p>Players can use either the web interface or a MUD client interchangeably - they share the same game state and database.</p>
+    </div>
+<div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
+</body>
+</html>

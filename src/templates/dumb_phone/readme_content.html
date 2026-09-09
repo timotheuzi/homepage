@@ -1,0 +1,107 @@
+<h1>Dumb Phone</h1>
+
+<p>Dumb Phone is a powerful network security and privacy application for Android. It leverages the native VPN Service API to provide deep packet inspection and filtering, allowing you to transform your smartphone into a secure, focused device.</p>
+
+<p><strong>Package Name:</strong> <code>com.dumbphone.dumbphone</code></p>
+
+<h2>Key Features</h2>
+
+<h3>🛡️ Dual-Mode Protection</h3>
+<ul>
+    <li><strong>Dumb Phone Mode</strong>: A strict "Default Block" policy. Only system-essential services (telephony, SMS) and user-whitelisted apps can access the network.</li>
+    <li><strong>Soft Firewall Mode</strong>: A "Default Allow" policy with intelligent filtering. It blocks traffic based on your custom rules and global threat intelligence.</li>
+</ul>
+
+<h3>🌍 Geo-Fencing & Blocklists</h3>
+<ul>
+    <li><strong>Continent-Based Protection</strong>: Instantly block connections based on global regions: <strong>North America (NA)</strong>, <strong>South America (SA)</strong>, <strong>Europe (EU)</strong>, <strong>Asia (AS)</strong>, <strong>Africa (AF)</strong>, and <strong>Oceania (OC)</strong>. Includes pre-loaded data for over 100,000 IP ranges.</li>
+    <li><strong>Lazy Loading & Parallel Sync</strong>: IP ranges are downloaded in parallel and loaded asynchronously in the background, ensuring the UI remains responsive during updates.</li>
+    <li><strong>Update Notifications</strong>: Receive system alerts when threat intelligence data is successfully synchronized in the background.</li>
+    <li><strong>Smart Refresh & Self-Healing</strong>: Periodic recomputation of statistics from local logs ensures 100% data integrity, with a weekly update policy to minimize battery and data usage.</li>
+    <li><strong>Custom Entries</strong>: Add your own blocklist groups with manual IP or CIDR range entries, supported by the <strong>P2P</strong> blocklist.</li>
+</ul>
+
+<h3>⚙️ Granular Control</h3>
+<ul>
+    <li><strong>Custom Rules</strong>: Create rules for specific IP addresses or Android package names. Support for port-specific and protocol-specific (TCP/UDP) filtering.</li>
+    <li><strong>Live Monitoring</strong>: Searchable connection logs with detailed metadata including destination, port, and responsible process. Logs are automatically grouped and summarized for clarity.</li>
+</ul>
+
+<h3>🎨 Modern Interface</h3>
+<ul>
+    <li><strong>Clean Design</strong>: Beautiful, intuitive interface with smooth animations and Material Design 3 principles.</li>
+    <li><strong>Dark Mode</strong>: Full support for system-wide dark theme.</li>
+    <li><strong>Elastic UI</strong>: Fully responsive and optimized for all screen sizes, including support for Linux desktop, phones, and tablets. UI elements dynamically adapt to prevent overflows and layout issues.</li>
+</ul>
+
+<h2>Privacy First</h2>
+<ul>
+    <li><strong>100% Local</strong>: All filtering and logging occur entirely on your device.</li>
+    <li><strong>No Data Export</strong>: Your network activity never leaves the device.</li>
+    <li><strong>Clean Slate</strong>: Automatic database wipe on initial installation ensures a secure and optimized state for the grouped protection model.</li>
+    <li><strong>Open Source</strong>: Transparent security logic implemented in Kotlin and Dart.</li>
+</ul>
+
+<h2>Development</h2>
+<p>Use the provided <code>Makefile</code> for common tasks:</p>
+<ul>
+    <li><code>make android</code>: Build release APK.</li>
+    <li><code>make bundle</code>: Build AAB for Play Store.</li>
+    <li><code>make linux</code>: Build Linux desktop executable.</li>
+    <li><code>make dumbphone.zip</code>: Build debug APK with verbose logging.</li>
+    <li><code>make test</code>: Run unit tests.</li>
+    <li><code>make lint</code>: Run code analysis and linting.</li>
+    <li><code>make format</code>: Format code with dart format.</li>
+    <li><code>make container-start</code>: Start development environment in a container.</li>
+</ul>
+
+<h2>Documentation</h2>
+<ul>
+    <li><strong><a href="/dumb_phone/user_guide">User Guide</a></strong>: Detailed usage instructions for all features.</li>
+    <li><strong><a href="/dumb_phone/privacy">Privacy Policy</a></strong>: Complete privacy policy and data handling information.</li>
+</ul>
+
+<h2>Tech Stack</h2>
+<ul>
+    <li><strong>Framework</strong>: Flutter 3.47+</li>
+    <li><strong>Language</strong>: Dart 3.x, Kotlin 2.2+</li>
+    <li><strong>Platform</strong>: Android (API 25-37+) & Linux</li>
+    <li><strong>Build System</strong>: Gradle 9.4.1, AGP 8.13.0</li>
+    <li><strong>Architecture</strong>: MVVM with ViewModel pattern</li>
+    <li><strong>State Management</strong>: ValueListenable-based reactive state</li>
+    <li><strong>Database</strong>: SQLite (sqflite) with FFI support for Desktop</li>
+</ul>
+
+<h2>Building from Source</h2>
+
+<h3>Prerequisites</h3>
+<ul>
+    <li>Flutter SDK (3.0 or higher)</li>
+    <li>Android SDK</li>
+    <li>JDK 11+</li>
+</ul>
+
+<h3>Quick Start</h3>
+<pre><code># Install dependencies
+flutter pub get
+
+# Run linter
+make lint
+
+# Run tests
+make test
+
+# Build release APK
+make android
+
+# Build release bundle for Play Store
+make bundle</code></pre>
+
+<h2>Contributing</h2>
+<p>This is a confidential project. All contributions should follow the project's coding standards and maintain the privacy-first architecture.</p>
+
+<h2>License</h2>
+<p>Licensed under the <strong>Dark Work Proprietary License</strong>. See <a href="/dumb_phone/license">LICENSE</a> for details.</p>
+
+<hr>
+<p><em>Classification: Confidential</em></p>

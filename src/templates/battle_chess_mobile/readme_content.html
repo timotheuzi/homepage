@@ -1,0 +1,42 @@
+<h1>⚔️ BATTLE CHESS</h1>
+
+<p>A visceral, cartoon-style chess game built with <strong>Flutter</strong> and the <strong>Flame engine</strong>. Featuring chunky pieces with big personalities and high-impact combat animations.</p>
+
+<h2>Features</h2>
+
+<ul>
+    <li><strong>Unique Fatalities:</strong> Every piece type has a unique, violent death animation—pawns get squashed, rooks crumble, and kings suffer a dramatic shake and fade.</li>
+    <li><strong>Top-Tier Cartoon Animations:</strong>
+        <ul>
+            <li><strong>Move hop:</strong> pieces anticipate jumps with a squash, hop along an arc, stretch in mid-air, and settle with a bounce.</li>
+            <li><strong>Fight snap:</strong> captures trigger a wind-up, a snap-lunge attack, screen shake on impact, and a slow retract.</li>
+            <li><strong>Idle breathing:</strong> pieces gently bob and pulse while waiting.</li>
+        </ul>
+    </li>
+    <li><strong>Multiple Chess Computers:</strong> Play against dorky AI personalities like <em>Sir SnoodleBottom</em> with varying difficulty levels (Random/Basic).</li>
+    <li><strong>Battle Log & Chat:</strong> A real-time log of every move with interactive chat and trash-talking AI opponents.</li>
+    <li><strong>Local Network Multiplayer:</strong> Host or join games over Wi-Fi/LAN for cross-platform head-to-head battles.</li>
+    <li><strong>Snazzy Vector Graphics:</strong> Custom vector pieces drawn entirely with Canvas—chunky outlines, googly eyes, and glossy highlights.</li>
+    <li><strong>Full Chess Rules:</strong> legal move generation, castling, en passant, promotion, and checkmate detection.</li>
+</ul>
+
+<h2>Project layout</h2>
+
+<pre><code>lib/
+  main.dart                  # Flutter app shell & Material UI
+  game/
+    chess_engine.dart        # Rules engine (Pure Dart)
+    chess_ai.dart            # Minimax AI with varying difficulty
+    multiplayer_manager.dart # Local P2P socket communication
+    piece.dart               # Piece model & color definitions
+    piece_sprites.dart       # Custom cartoon vector painters
+    piece_component.dart     # Flame components with unique fatalities
+    board_game.dart          # FlameGame logic, particles, and shake
+    game_icon.dart           # Reusable vector app icon widget</code></pre>
+
+<h2>License</h2>
+
+<p><strong>Proprietary License</strong></p>
+
+<p>© 2024 <strong>Dark Work</strong>. All rights reserved.<br>
+Created and owned by <strong>Dark Work</strong>. Unauthorized copying, modification, or distribution of this software is strictly prohibited.</p>
