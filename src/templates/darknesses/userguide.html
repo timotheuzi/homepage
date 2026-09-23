@@ -25,6 +25,7 @@
         <li><a href="#drug-addiction">Drug & Addiction System</a></li>
         <li><a href="#npc-aggression">NPC Aggression & Stalking</a></li>
         <li><a href="#party-system">Party System</a></li>
+        <li><a href="#server-administration">Server Administration</a></li>
         <li><a href="#mud-client-setup">MUD Client Setup</a></li>
     </ol>
 
@@ -271,6 +272,9 @@
         <li><code>SELLALL</code>: Sell all unequipped hardware.</li>
     </ul>
 
+    <h2 id="world-structure">World Structure</h2>
+    <p>The grid consists of 8 procedural sectors connected to <strong>The Neon Hub</strong>. Higher sectors feature tougher enemies, environmental hazards, and richer loot.</p>
+
     <h2 id="combat-system">Combat System</h2>
 
     <h3>Damage & Crits</h3>
@@ -282,13 +286,43 @@
         <li>Strength: 1.5x damage. Weakness: 0.5x damage.</li>
     </ul>
 
+    <h3>Weapon Speed</h3>
+    <p>10 Speed Bonus = 1 extra attack/round. 10 Agility = 1 extra attack/round.</p>
+
+    <h2 id="items-equipment">Items & Equipment</h2>
+    <p>Equip weapons, armor, and accessories to boost your stats. Bosses drop unique legendary items.</p>
+
+    <h2 id="character-progression">Character Progression</h2>
+    <p>Earn XP by defeating enemies. Each level up awards 1 stat point to manually assign to STR, AGI, HEA, INT, WIL, or CHA.</p>
+
+    <h2 id="karma-reputation">Karma & Reputation</h2>
+    <p>Karma ranges from -100 (Villain) to +100 (Saint). Your alignment affects how security bots and NPCs react to you.</p>
+
+    <h2 id="stealth-system">Stealth System</h2>
+    <p>Use <code>STEALTH</code> or <code>SNEAK</code> to hide. Backstab attacks from stealth deal massive bonus damage.</p>
+
+    <h2 id="drug-addiction">Drug & Addiction System</h2>
+    <p>Consumables provide temporary stat boosts but carry risk of addiction and withdrawal penalties.</p>
+
+    <h2 id="npc-aggression">NPC Aggression & Stalking</h2>
+    <p>Aggressive NPCs and hostile AI bots may stalk or initiate combat when you enter their room.</p>
+
     <h2 id="party-system">Party System</h2>
     <ul>
         <li><code>PARTY CREATE</code>: Start a new party as leader.</li>
-        <li><code>PARTY INVITE &lt;player&gt;</code>: Invite a player.</li>
-        <li><code>PARTY ACCEPT</code>: Join a party.</li>
+        <li><code>PARTY INVITE &lt;player&gt;</code>: Invite a player in your current room.</li>
+        <li><code>PARTY ACCEPT</code>: Join a party after receiving an invite.</li>
         <li><code>PARTY LEAVE</code>: Exit your current party.</li>
         <li><code>PARTY STATUS</code>: See current members.</li>
+        <li><strong>Group Movement</strong>: When the leader moves, all online party members move with them.</li>
+    </ul>
+
+    <h2 id="server-administration">Server Administration</h2>
+    <ul>
+        <li><code>make repair</code>: Full database reset (wipes players).</li>
+        <li><code>make clean</code>: Wipes world data but keeps players.</li>
+        <li><code>make init</code>: Generates new world state.</li>
+        <li><code>python manage.py process_bots</code>: Starts the AI daemon.</li>
     </ul>
 
     <h2 id="mud-client-setup">MUD Client Setup</h2>
@@ -302,9 +336,11 @@
         <li>Enter details: Host: <code>localhost</code>, Port: <code>4000</code>, Name: <code>Darkness BBS</code></li>
         <li>Uncheck <strong>"Use SSL/TLS"</strong></li>
         <li>Click <strong>"Connect"</strong></li>
+        <li>Log in with your handle and password when prompted</li>
     </ol>
 
-    <p>Players can use either the web interface or a MUD client interchangeably - they share the same game state and database.</p>
+    <h4>MUSHclient & Generic Telnet</h4>
+    <p>Connect to <code>localhost:4000</code> using MUSHclient or via terminal command: <code>telnet localhost 4000</code>.</p>
     </div>
 <div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
 </body>

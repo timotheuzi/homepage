@@ -20,7 +20,7 @@ PROJECTS = [
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
     'darknesses': 'Darknesses BBS',
-    'darkwork': 'Dark Work',
+    'darkwork': 'Dark Work Labs',
     'zombie_tim': 'Zombie Tim',
     'battle_chess_mobile': 'Battle Chess'
 }

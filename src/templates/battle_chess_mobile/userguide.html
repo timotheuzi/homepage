@@ -16,27 +16,82 @@
     <p>Battle Chess is not just a game of strategy; it's a spectacle. Every piece is a character with its own idle bobbing and breathing animations. Moves aren't just slides—they are hops and leaps. Captures aren't just removals—they are visceral, screen-shaking battles that end in unique piece-specific fatalities.</p>
 
     <h2>How to Play</h2>
+
+    <h3>Choosing Your Side</h3>
+    <p>Before every match, you can choose to play as <strong>White</strong> or <strong>Black</strong>.</p>
+    <ul>
+        <li><strong>White:</strong> You move first. The board is shown in standard orientation.</li>
+        <li><strong>Black:</strong> The computer or opponent moves first. The board is <strong>inverted</strong> so your Black pieces are at the bottom for better visibility.</li>
+    </ul>
+
     <h3>Moving Pieces</h3>
     <ol>
         <li><strong>Select a Piece:</strong> Tap any of your pieces.</li>
-        <li><strong>View Legal Moves:</strong> Green Circles (Move), Red Outlines (Capture).</li>
-        <li><strong>Confirm Move:</strong> Tap a highlighted square.</li>
-        <li><strong>Undo:</strong> Use the <strong>Undo</strong> button.</li>
+        <li><strong>View Legal Moves:</strong>
+            <ul>
+                <li><strong>Green Circles:</strong> Indicate squares you can move to.</li>
+                <li><strong>Red Outlines:</strong> Indicate enemy pieces you can capture.</li>
+            </ul>
+        </li>
+        <li><strong>Confirm Move:</strong> Tap a highlighted square to execute the move.</li>
+        <li><strong>Undo:</strong> Use the <strong>Undo</strong> button in the top bar if you make a mistake.</li>
     </ol>
 
     <h3>Battles & Fatalities</h3>
-    <p>When you move your piece onto a red-highlighted square, a <strong>Fight</strong> is triggered. The board will flicker black at the moment of impact, and the victim will undergo a unique death animation.</p>
-
-    <h3>Setting Up Games</h3>
-    <p>Access the <strong>Settings (gear icon)</strong> to choose your game mode:</p>
+    <p>When you move your piece onto a red-highlighted square, a <strong>Fight</strong> is triggered.</p>
     <ul>
-        <li><strong>Playing the Computer</strong>: Random or Basic difficulty.</li>
-        <li><strong>Local Head-to-Head</strong>: Play against someone on the same device.</li>
-        <li><strong>Local Network Multiplayer</strong>: Play across two devices on the same Wi-Fi/LAN.</li>
+        <li>Watch for the wind-up and the snap-lunge!</li>
+        <li>The board will flicker black at the moment of impact.</li>
+        <li>The victim will undergo a unique death animation based on their type (e.g., the Rook crumbles, the Queen explodes).</li>
     </ul>
 
+    <h3>The Learning AI</h3>
+    <p>Unlike standard chess apps, the computer here <strong>learns</strong> as you play.</p>
+    <ul>
+        <li><strong>Adapting to You:</strong> If you beat the AI with a specific trick or opening, it will analyze that defeat. Next time, it might recognize the "trick" and comment on it, or even try to use your own winning moves against you!</li>
+        <li><strong>Persistent Knowledge:</strong> The AI's experience is saved to a local database. The more you play, the "smarter" and more personalized your opponent becomes.</li>
+        <li><strong>Adaptive Difficulty:</strong> In <strong>Computer (Random)</strong> mode, the AI's skill fluctuates, but its "memory" of your tactics remains sharp.</li>
+    </ul>
+
+    <h3>Battle Log & Chat</h3>
+    <p>The bottom of the screen contains the <strong>Battle Log</strong>.</p>
+    <ul>
+        <li><strong>Move Tracking:</strong> Every move is logged with turn numbers (e.g., "1. e2 → e4").</li>
+        <li><strong>Trash Talk:</strong> AI opponents will occasionally send dorky messages.</li>
+        <li><strong>Chat:</strong> Tap the "Trash talk here..." field to send messages to your opponent or the computer.</li>
+    </ul>
+
+    <h2>Setting Up Games</h2>
+    <p>Access the <strong>Settings (gear icon)</strong> in the top-left corner to choose your game mode.</p>
+
+    <h3>1. Playing the Computer</h3>
+    <p>By default, you start against a computer with a dorky name.</p>
+    <ul>
+        <li><strong>Computer (Random):</strong> Skill varies greatly. It might play a grandmaster move or move a piece randomly.</li>
+        <li><strong>Computer (Basic):</strong> A consistent, strategic opponent using minimax logic.</li>
+    </ul>
+
+    <h3>2. Local Head-to-Head</h3>
+    <p>Select <strong>Local Multiplayer (Human)</strong> to play against someone sharing your device.</p>
+
+    <h3>3. Local Network Multiplayer (Wi-Fi)</h3>
+    <p>Play across two different devices on the same Wi-Fi/LAN network.</p>
+    <ol>
+        <li>One player selects <strong>Host Local Game</strong>.</li>
+        <li>Share the displayed IP address with your opponent.</li>
+        <li>The other player selects <strong>Join Local Game</strong> and enters the IP.</li>
+    </ol>
+
+    <h3>4. Nearby Play (Bluetooth)</h3>
+    <p>Play head-to-head without needing a Wi-Fi network.</p>
+    <ol>
+        <li>Select <strong>Nearby (Bluetooth)</strong> from settings on both devices.</li>
+        <li>One player taps <strong>Host Game</strong>, the other taps <strong>Search Games</strong>.</li>
+        <li>Connect and grant required permissions (Bluetooth & Location).</li>
+    </ol>
+
     <hr>
-    <p>© 2024 <strong>Dark Work</strong>. Proprietary Software.</p>
+    <p>© 2026 <strong>Dark Work</strong> & <strong>timotheuzi@hotmail.com</strong>. Proprietary Software.</p>
     </div>
 <div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
 </body>

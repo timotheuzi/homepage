@@ -23,26 +23,89 @@
     <h3>2. Local App Data</h3>
     <p>All data is stored locally on your device using SQLite:</p>
     <ul>
-        <li>Personal Assistant Data (Reminders, tasks, notes)</li>
-        <li>Dictionary Words and Definitions</li>
-        <li>App Preferences</li>
-        <li>Conversation History</li>
-        <li>Security Scan Results</li>
-        <li>System Information</li>
+        <li><strong>Personal Assistant Data</strong>: Reminders, tasks, and notes are stored locally to provide assistant functionality.</li>
+        <li><strong>Dictionary Words and Definitions</strong>: Word definitions from public domain sources for offline dictionary functionality.</li>
+        <li><strong>App Preferences</strong>: User preferences and settings stored locally.</li>
+        <li><strong>Conversation History</strong>: Chat history stored locally to provide context and learning.</li>
+        <li><strong>Security Scan Results</strong>: Network and Bluetooth information is scanned locally and not stored or transmitted.</li>
+        <li><strong>System Information</strong>: OS type, version, and system status used for desktop integration features.</li>
     </ul>
 
     <h3>3. Internet Access</h3>
-    <p>The app requires internet access for World Information (Weather, News), Dictionary Expansion, and optional Social Media integration.</p>
+    <p>The app requires internet access for:</p>
+    <ul>
+        <li><strong>World Information</strong>: Weather data (Open-Meteo), news headlines (Fark, Yahoo News RSS), and time services.</li>
+        <li><strong>Dictionary Expansion</strong>: Downloading word definitions during initial setup or via "Vocabulary Feast" feature.</li>
+        <li><strong>Social Media</strong>: X/Twitter integration when you provide API credentials (optional feature).</li>
+        <li><strong>Vocabulary Learning</strong>: Fetching random words from the internet to expand Tim's vocabulary.</li>
+    </ul>
+    <p>No personal data, reminders, tasks, or notes are ever transmitted or collected on our servers.</p>
 
     <h2>Data Storage and Security</h2>
     <ul>
-        <li><strong>All data is stored locally on your device.</strong></li>
+        <li><strong>All data (dictionary, reminders, tasks, notes, chat history) is stored locally on your device.</strong></li>
+        <li>We use a local SQLite "Brain Database" to manage this information.</li>
         <li>No personal information is transmitted to external servers.</li>
+        <li>Security scans and system information are processed in-memory only and not persisted.</li>
         <li>We implement industry-standard security measures to protect your locally stored data.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <h3>APIs Used</h3>
+    <ul>
+        <li><strong>Open-Meteo</strong>: Weather data (no API key required)</li>
+        <li><strong>Fark.com & Yahoo News</strong>: News headlines via RSS feeds</li>
+        <li><strong>Random Word API</strong>: Vocabulary expansion</li>
+        <li><strong>Dictionary API</strong>: Word definitions</li>
+        <li><strong>X/Twitter API</strong>: Optional social media integration (only when you provide credentials)</li>
+    </ul>
+
+    <h3>Analytics & Tracking</h3>
+    <ul>
+        <li>We do not use third-party analytics services.</li>
+        <li>We do not share your data with any external parties.</li>
+        <li>No advertising or tracking services are integrated.</li>
     </ul>
 
     <h2>Children's Privacy</h2>
     <p>Our app is suitable for all ages and does not collect any information from children.</p>
+
+    <h2>Permissions</h2>
+    <h3>Desktop Platforms (Linux, Windows, macOS)</h3>
+    <ul>
+        <li><strong>Network Access</strong>: Required for security monitoring (scanning connections, checking Bluetooth, ping tests).</li>
+        <li><strong>System Command Execution</strong>: Optional feature for running system commands (requires user initiation).</li>
+        <li><strong>File System Access</strong>: For scanning files and exporting notes/tasks.</li>
+    </ul>
+
+    <h3>Mobile Platforms (Android, iOS)</h3>
+    <ul>
+        <li><strong>Storage Access</strong>: For file scanning features.</li>
+        <li><strong>Network Access</strong>: For internet-based features (weather, news, vocabulary).</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <ul>
+        <li>Assistant data (reminders, tasks, notes) and dictionary data are retained as long as the app is installed.</li>
+        <li>Security scan results are not stored; they are generated on-demand and displayed in the chat.</li>
+        <li>You can clear all data via the <strong>Settings</strong> menu within the app ("Clear Brain").</li>
+        <li>You can also delete all stored data by uninstalling the app.</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+        <li>Access your stored data directly within the app's interfaces (Chat, Tasks, Notes screens).</li>
+        <li>Request deletion of your data (via Settings or by uninstalling the app).</li>
+        <li>Opt out of any data collection (though this may limit app functionality).</li>
+    </ul>
+
+    <h2>Feature-Specific Privacy Notes</h2>
+    <h3>Security Monitoring</h3>
+    <p>All security scans are performed locally on your device. Network connection information and Bluetooth device lists are not stored or transmitted.</p>
+
+    <h3>Social Media (X/Twitter)</h3>
+    <p>API credentials are stored locally on your device. Tweet data is fetched in real-time and not stored permanently.</p>
 
     <h2>Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at: privacy@zombietim.app</p>

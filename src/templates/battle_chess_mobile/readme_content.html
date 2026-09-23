@@ -13,8 +13,9 @@
             <li><strong>Idle breathing:</strong> pieces gently bob and pulse while waiting.</li>
         </ul>
     </li>
-    <li><strong>Multiple Chess Computers:</strong> Play against dorky AI personalities like <em>Sir SnoodleBottom</em> with varying difficulty levels (Random/Basic).</li>
-    <li><strong>Battle Log & Chat:</strong> A real-time log of every move with interactive chat and trash-talking AI opponents.</li>
+    <li><strong>Learning AI:</strong> Features a SQLite-backed neural-inspired learning system. The AI remembers your moves, adopts winning human tactics, and learns to avoid tricks it has fallen for in the past.</li>
+    <li><strong>Dynamic Personalities:</strong> Play against dorky AI personalities like <em>Sir SnoodleBottom</em> with varying styles (Position-focused, Aggressive, Tactical).</li>
+    <li><strong>Battle Log & Adaptive Chat:</strong> A real-time log of every move with interactive trash-talking AI that recognizes "tricks" it has seen before.</li>
     <li><strong>Local Network Multiplayer:</strong> Host or join games over Wi-Fi/LAN for cross-platform head-to-head battles.</li>
     <li><strong>Snazzy Vector Graphics:</strong> Custom vector pieces drawn entirely with Canvas—chunky outlines, googly eyes, and glossy highlights.</li>
     <li><strong>Full Chess Rules:</strong> legal move generation, castling, en passant, promotion, and checkmate detection.</li>
@@ -26,7 +27,8 @@
   main.dart                  # Flutter app shell & Material UI
   game/
     chess_engine.dart        # Rules engine (Pure Dart)
-    chess_ai.dart            # Minimax AI with varying difficulty
+    chess_ai.dart            # Minimax AI with persistent learning
+    learning_database.dart   # SQLite storage for move weights and experience
     multiplayer_manager.dart # Local P2P socket communication
     piece.dart               # Piece model & color definitions
     piece_sprites.dart       # Custom cartoon vector painters
@@ -38,5 +40,5 @@
 
 <p><strong>Proprietary License</strong></p>
 
-<p>© 2024 <strong>Dark Work</strong>. All rights reserved.<br>
+<p>© 2026 <strong>Dark Work</strong> & <strong>timotheuzi@hotmail.com</strong>. All rights reserved.<br>
 Created and owned by <strong>Dark Work</strong>. Unauthorized copying, modification, or distribution of this software is strictly prohibited.</p>
