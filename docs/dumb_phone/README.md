@@ -32,6 +32,9 @@ Dumb Phone is a powerful network security and privacy application for Android. I
 *   **Clean Slate**: Automatic database wipe on initial installation ensures a secure and optimized state for the grouped protection model.
 *   **Transparent Code**: Security logic implemented in Kotlin and Dart.
 
+## Legal Disclaimer
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+
 ## Development
 Use the provided `Makefile` for common tasks:
 - `make android`: Build release APK.
@@ -82,11 +85,5 @@ make android
 make bundle
 ```
 
-## Contributing
-This is a confidential project. All contributions should follow the project's coding standards and maintain the privacy-first architecture.
-
 ## License
 Proprietary — Copyright (c) 2026 Dark Work. All rights reserved. See [LICENSE](LICENSE) for the full terms.
-
----
-*Classification: Confidential*

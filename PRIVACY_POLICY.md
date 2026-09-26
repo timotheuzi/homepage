@@ -6,7 +6,7 @@ Dark Work values your privacy. This Privacy Policy explains how we collect, use,
 
 ## Information We Collect
 
-- We do not collect personal information unless you provide it voluntarily (e.g., via contact forms, if implemented).
+- We do not collect personal information unless you provide it voluntarily.
 - We may collect non-personal information such as browser type, IP address, and pages visited for analytics purposes.
 
 ## How We Use Your Information
@@ -22,10 +22,14 @@ We do not share your information with third parties except as required by law.
 
 We implement reasonable security measures to protect your information.
 
+## Disclaimer
+
+This website and its content are provided for educational and entertainment purposes only, "as is", with no warranty of any kind, no guarantees, and no liability for anything.
+
 ## Changes to This Policy
 
 We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact privacy@darkwork.com.
+For questions, contact timotheuzi@hotmail.com.

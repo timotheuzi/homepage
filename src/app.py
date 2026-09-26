@@ -13,7 +13,8 @@ PROJECTS = [
     'darknesses',
     'darkwork',
     'zombie_tim',
-    'battle_chess_mobile'
+    'battle_chess_mobile',
+    'nervous'
 ]
 
 # Map project slugs to their display names
@@ -22,7 +23,8 @@ PROJECT_NAMES = {
     'darknesses': 'Darknesses BBS',
     'darkwork': 'Dark Work Labs',
     'zombie_tim': 'Zombie Tim',
-    'battle_chess_mobile': 'Battle Chess'
+    'battle_chess_mobile': 'Battle Chess',
+    'nervous': 'Nervous?'
 }
 
 # Map project slugs to their descriptions
@@ -31,7 +33,8 @@ PROJECT_DESCRIPTIONS = {
     'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
     'darkwork': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
     'zombie_tim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!',
-    'battle_chess_mobile': 'A visceral, cartoon-style chess game built with Flutter and the Flame engine. Featuring chunky pieces with big personalities and high-impact combat animations.'
+    'battle_chess_mobile': 'A visceral, cartoon-style chess game built with Flutter and the Flame engine. Featuring chunky pieces with big personalities and high-impact combat animations.',
+    'nervous': 'A state-of-the-art Flutter mobile application developed by Dark Work LLC that measures real-time nervousness, anxiety, and physiological stress using phone sensors and paired smartwatch biometrics.'
 }
 
 # Map project slugs to their template name prefix
@@ -40,7 +43,8 @@ TEMPLATE_PREFIXES = {
     'darknesses': 'darknesses',
     'darkwork': 'darkwork',
     'zombie_tim': 'zombie_tim',
-    'battle_chess_mobile': 'battle_chess_mobile'
+    'battle_chess_mobile': 'battle_chess_mobile',
+    'nervous': 'nervous'
 }
 
 # Map project slugs to live links

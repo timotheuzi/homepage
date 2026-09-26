@@ -15,11 +15,10 @@ This guide provides instructions on how to use and navigate the Dark Work homepa
 - **Product Pages**: Click on a product name to view its details and document links.
 - **Documents**: On each product page, click links to view README, User Guide, License, or Privacy Policy (if available).
 
-## Troubleshooting
+## Legal Disclaimer
 
-- If a document is not found, a 404 error will be displayed.
-- For development issues, refer to the README.md.
+All applications and content on this site are provided for educational and entertainment purposes only, with no guarantees, no warranty of any kind, and no liability for anything.
 
 ## Contact
 
-For support, contact Dark Work support team.
+For support, contact timotheuzi@hotmail.com.

@@ -13,8 +13,8 @@ Dark Work LLC ("we", "our", or "us") respects your privacy. **Nervous? processes
 - **Watch Telemetry & Bluetooth**: Optional Bluetooth connectivity for paired smartwatch biometrics.
 - **Standalone Operation**: Works completely without a watch.
 
-## 3. Legal Disclaimer (For Educational Uses Only)
-**For educational and entertainment uses only, no guarantees. The developer and Dark Work LLC provide no warranties and assume no responsibility for any actions or decisions made using this software.** Nervous? is not a medical device or certified polygraph instrument.
+## 3. Legal Disclaimer
+**For educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. The developer and Dark Work LLC provide no warranties and assume no responsibility or liability for any actions, decisions, or outcomes made using this software.** Nervous? is not a medical device or certified polygraph instrument.
 
 ## 4. Contact Us
-For support inquiries, contact Dark Work LLC.
+For support inquiries, contact timotheuzi@hotmail.com.

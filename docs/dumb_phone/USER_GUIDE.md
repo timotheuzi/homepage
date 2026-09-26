@@ -19,7 +19,6 @@ Welcome to Dumb Phone! This guide helps you navigate the features of this networ
 
 ---
 
-
 ## 1. Introduction <a id="introduction"></a>
 
 Dumb Phone uses Android's VPN Service API to intercept and filter network traffic locally on your device. The app features a modern, beautiful, and **elastic interface** that adapts to any screen size with smooth animations and full dark mode support.
@@ -154,29 +153,8 @@ The Settings screen provides comprehensive control with a beautiful card-based l
 ### Additional Settings
 - **Floating Notifications**: Feedback messages use modern floating snackbars with rounded corners.
 
-## Tips and Best Practices
-
-1. **Start with Soft Firewall**: For everyday use, start with Soft Firewall mode and add specific rules as needed.
-2. **Use Protection Zones**: Enable the continent blocklists relevant to you (e.g. Europe) for broad coverage with minimal false positives.
-3. **Review Logs Regularly**: Check the Logs screen periodically to understand your device's network behavior.
-4. **Custom Rules**: Create allow/block rules for trusted or unwanted destinations (IP, port, or protocol — the rules-management UI is pending navigation).
-5. **Privacy First**: Remember that your traffic data never leaves your device — the only outbound requests are periodic public blocklist downloads.
-
-## Troubleshooting
-
-### VPN Permission Issues
-- Ensure you've granted VPN permission when prompted (use the ENABLE button in Settings).
-- Firewall modes require Android — on Linux desktop builds the VPN permission request will be denied because the firewall engine is Android-only.
-- Check that no other VPN apps are currently active.
-
-### Performance
-- **Optimized Loading**: Parallel processing and lazy loading ensure minimal battery impact.
-- **Initial Install**: On the first launch, the app automatically performs a **one-time database optimization** (wiping old logs and settings) to ensure the grouped protection model operates at peak efficiency.
-- **Local Only**: All traffic analysis stays on your device (the only network cost is periodic blocklist downloads), eliminating privacy risks and data costs.
+## Legal Disclaimer
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
 
 ## Support
-
-For issues, questions, or contributions, refer to the project repository or documentation.
-
----
-*Classification: Confidential*
+For issues, questions, or contributions, contact timotheuzi@hotmail.com.

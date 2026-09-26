@@ -22,6 +22,9 @@ A visceral, cartoon-style chess game built with **Flutter** and the **Flame engi
   - **Nearby Play (Bluetooth):** Head-to-head play over Bluetooth without Wi-Fi network required (via `nearby_connections`).
 - **Full Chess Rules:** Legal move generation, castling, en passant, promotion, and checkmate detection.
 
+## Legal Disclaimer
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+
 ## Project Layout
 
 ```

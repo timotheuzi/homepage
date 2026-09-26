@@ -68,6 +68,9 @@ Play across two different devices on the same Wi-Fi/LAN network using **Host Loc
 ### 4. Nearby Play (Bluetooth)
 Play head-to-head without needing a Wi-Fi network using **Nearby (Bluetooth)**.
 
+## Legal Disclaimer
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+
 ---
 
 © 2026 **Dark Work** & **timotheuzi@hotmail.com**. Proprietary Software.

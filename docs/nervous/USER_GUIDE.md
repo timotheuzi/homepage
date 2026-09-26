@@ -33,4 +33,4 @@ Nervous? works in two modes:
 ---
 
 ## Legal Disclaimer
-*For educational and entertainment uses only, no guarantees. The developer and Dark Work LLC provide no warranties and assume no responsibility for any actions or decisions made using this software.*
+*For educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.*

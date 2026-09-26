@@ -72,12 +72,13 @@ All permissions are used solely for the features described and no data is collec
 
 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
+## Legal Disclaimer
+
+This software and its services are provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything.
+
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at:
-
-Zombie Tim Development Team
-Email: privacy@zombietim.app
+If you have any questions about this Privacy Policy, please contact us at: timotheuzi@hotmail.com
 
 ## Data Retention
 
@@ -94,28 +95,6 @@ You have the right to:
 - Request deletion of your data (via Settings or by uninstalling the app).
 - Opt out of any data collection (though this may limit app functionality).
 - All your data remains on your device and under your control.
-
-## Feature-Specific Privacy Notes
-
-### Security Monitoring
-- All security scans are performed locally on your device.
-- Network connection information and Bluetooth device lists are not stored or transmitted.
-- Scans are read-only and do not modify system state.
-
-### System Health & Diagnostics
-- Disk, memory, CPU, uptime and process information is read locally and only when you request it (via the Settings **Run Vitals Check** button or a chat command).
-- Results are displayed in the moment and are **not persisted** to the Brain Database or sent anywhere.
-- Update checks defer to your operating system's package manager. Installing updates only happens when you explicitly request it, and only on desktop platforms.
-
-### World Information
-- Weather and news requests are made to third-party APIs.
-- No personal information is sent with these requests.
-- Location data for weather is obtained via IP geolocation (ip-api.com) and not stored.
-
-### System Integration
-- System commands are executed locally on your device.
-- System status information is not stored or transmitted.
-- File exports are saved to your device's local storage only.
 
 ---
 

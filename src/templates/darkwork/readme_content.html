@@ -1,72 +1,27 @@
-<h1>Dark Work Labs: The Great Defender 🛡️</h1>
+<h1>Dark Work Labs</h1>
 
-<p><strong>Package Name:</strong> <code>com.darkwork.labs</code><br>
+<p><strong>Application:</strong> Dark Work Labs<br>
+<strong>Android package:</strong> <code>com.darkwork.labs</code><br>
 <strong>Version:</strong> 1.0.0+1<br>
-<strong>Platform:</strong> Android & Linux<br>
-<strong>Framework:</strong> Flutter (Dart ≥ 3.0)</p>
+<strong>Platforms:</strong> Android and Linux<br>
+<strong>Framework:</strong> Flutter / Dart</p>
 
-<p>A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux. Dark Work Labs acts as a digital sentinel, merging advanced reconnaissance tools with AI-driven anomaly detection into a modern, beautiful interface.</p>
+<p>Dark Work Labs is a local-first security monitoring application. It brings Bluetooth and network discovery, hardware telemetry, system monitoring, filesystem integrity scanning, event logging, and SDR status monitoring into one responsive Flutter interface.</p>
 
-<p><strong>All data processing and storage occurs exclusively on your device; no data is ever transmitted or saved outside of your phone.</strong></p>
+<p><em>Legal Disclaimer: This application is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.</em></p>
 
-<h2>🚀 Overview</h2>
-
-<p>Dark Work Labs provides real-time oversight of your digital and physical environment. Under the watchful eye of the <strong>Great Defender</strong> — a custom-painted Sentinel Shield icon featuring a deep obsidian shield, premium gold frame, and amethyst iris — it monitors network traffic, Bluetooth signals, and hardware sensor data.</p>
-
-<h2>✨ Features</h2>
-
-<h3>🔍 Network & WiFi Sentinel</h3>
+<h2>Features</h2>
 <ul>
-    <li><strong>Automated Reconnaissance</strong>: Scans local networks for nodes and open ports.</li>
-    <li><strong>WiFi Security</strong>: Detects Rogue Access Points, Evil Twin attacks, and unencrypted networks.</li>
+    <li><strong>Dashboard:</strong> security status, perimeter scan trigger, Bluetooth/network counts, discovery overview, and theme toggle.</li>
+    <li><strong>Device discovery:</strong> Bluetooth/BLE and local network device lists with type filtering and refresh.</li>
+    <li><strong>Network security:</strong> network scanning, port/service assessment, security reports, and event logs.</li>
+    <li><strong>Sensor monitor:</strong> accelerometer, gyroscope, magnetometer, ambient light, battery, and location streams when available.</li>
+    <li><strong>System monitor:</strong> device information, CPU, memory, battery, network identity, sockets, and metric aggregates.</li>
+    <li><strong>File integrity scan:</strong> configurable local scan with progress, risk classification, and result details.</li>
+    <li><strong>Event logs:</strong> locally retained application events with level-based display and date filtering.</li>
+    <li><strong>Radio monitor:</strong> SDR hardware detection and spectrum/status information.</li>
+    <li><strong>Settings:</strong> application settings and appearance controls exposed by the current UI.</li>
 </ul>
-
-<h3>📡 Bluetooth & RF Surveillance</h3>
-<ul>
-    <li><strong>AirTag Identification</strong>: Monitors BLE for Apple AirTags and Find My network-enabled trackers.</li>
-    <li><strong>RF Spectrum Monitor</strong>: Integration with external SDR hardware (RTL-SDR) to detect Sub-GHz surveillance signals.</li>
-</ul>
-
-<h3>📊 Hardware Telemetry</h3>
-<ul>
-    <li><strong>Real-time Streams</strong>: Live monitoring of Accelerometer, Gyroscope, Magnetometer, and Ambient Light.</li>
-    <li><strong>System Vitals</strong>: Detailed tracking of CPU, memory, battery health, and active network sockets.</li>
-</ul>
-
-<h3>📁 File Integrity Scanner</h3>
-<ul>
-    <li><strong>Deep Analysis</strong>: Scans local file systems for suspicious patterns, dangerous extensions, and risk indicators.</li>
-    <li><strong>Risk Classification</strong>: Categorises findings as Low, Medium, or High risk with detailed metadata.</li>
-</ul>
-
-<h3>📝 Logging & Intelligence</h3>
-<ul>
-    <li><strong>System Event Logs</strong>: Real-time and historical log entries with date filtering and level-based colour coding.</li>
-</ul>
-
-<h2>🎨 The Great Defender UI</h2>
-<ul>
-    <li><strong>Unified Dashboard</strong>: Real-time security status provided by the Sentinel Shield with gradient status header.</li>
-    <li><strong>Premium Design Language</strong>: Consistent, refined visual identity across all security modules with a centralised colour palette (<code>AppColors</code>).</li>
-    <li><strong>Dark & Light Themes</strong>: Beautifully crafted Material 3 themes with amethyst/cyan accent colours and gold shield framing.</li>
-    <li><strong>Responsive Layouts</strong>: Adaptive screens with scrollable empty states and loading indicators.</li>
-</ul>
-
-<h2>🏗️ Architecture</h2>
-
-<h3>State Management</h3>
-<ul>
-    <li><strong>Provider</strong> (<code>package:provider</code>) — <code>ChangeNotifier</code> + <code>MultiProvider</code> pattern.</li>
-</ul>
-
-<h2>🔧 Build & Development</h2>
-
-<h3>Make Targets</h3>
-<pre><code>make get          # Fetch Dart dependencies
-make lint         # Run static analysis
-make test         # Run unit tests
-make run-android  # Run on Android device
-make run-linux    # Run on Linux</code></pre>
 
 <h2>📖 Documentation</h2>
 <ul>
