@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** March 16, 2026
+**Effective Date:** September 25, 2026
 
 ## Introduction
 
@@ -19,12 +19,12 @@ All data is stored locally on your device using SQLite:
 - **Conversation History**: Chat history stored locally to provide context and learning.
 - **Security Scan Results**: Network and Bluetooth information is scanned locally and not stored or transmitted.
 - **System Information**: OS type, version, and system status used for desktop integration features.
+- **System Health & Diagnostics**: Disk, memory, CPU, uptime and process counts are read locally on demand when you run a vitals check. These readings are held in memory only and are never stored or transmitted.
 
 ### 3. Internet Access
 The app requires internet access for:
 - **World Information**: Weather data (Open-Meteo), news headlines (Fark, Yahoo News RSS), and time services.
 - **Dictionary Expansion**: Downloading word definitions during initial setup or via "Vocabulary Feast" feature.
-- **Social Media**: X/Twitter integration when you provide API credentials (optional feature).
 - **Vocabulary Learning**: Fetching random words from the internet to expand Tim's vocabulary.
 - No personal data, reminders, tasks, or notes are ever transmitted or collected on our servers.
 
@@ -43,7 +43,6 @@ The app requires internet access for:
 - **Fark.com & Yahoo News**: News headlines via RSS feeds
 - **Random Word API**: Vocabulary expansion
 - **Dictionary API**: Word definitions
-- **X/Twitter API**: Optional social media integration (only when you provide credentials)
 
 ### Analytics & Tracking
 - We do not use third-party analytics services.
@@ -60,10 +59,12 @@ Our app is suitable for all ages and does not collect any information from child
 - **Network Access**: Required for security monitoring (scanning connections, checking Bluetooth, ping tests).
 - **System Command Execution**: Optional feature for running system commands (requires user initiation).
 - **File System Access**: For scanning files and exporting notes/tasks.
+- **System Health & Updates**: Vitals checks (disk, memory, CPU, uptime, processes) are read-only and run locally. Update checks use your operating system's own package manager; nothing is reported back to us.
 
 ### Mobile Platforms (Android, iOS)
 - **Storage Access**: For file scanning features.
 - **Network Access**: For internet-based features (weather, news, vocabulary).
+- **System Health**: Diagnostics are read-only and stay on the device. Tim can report available OS updates on mobile but will not install them.
 
 All permissions are used solely for the features described and no data is collected or transmitted.
 
@@ -82,6 +83,7 @@ Email: privacy@zombietim.app
 
 - Assistant data (reminders, tasks, notes) and dictionary data are retained as long as the app is installed.
 - Security scan results are not stored; they are generated on-demand and displayed in the chat.
+- System health diagnostics are not stored; they are gathered on-demand and shown on the Settings screen until you leave it.
 - You can clear all data via the **Settings** menu within the app ("Clear Brain").
 - You can also delete all stored data by uninstalling the app.
 
@@ -100,10 +102,10 @@ You have the right to:
 - Network connection information and Bluetooth device lists are not stored or transmitted.
 - Scans are read-only and do not modify system state.
 
-### Social Media (X/Twitter)
-- API credentials are stored locally on your device.
-- Tweet data is fetched in real-time and not stored permanently.
-- You can clear credentials at any time through the chat interface.
+### System Health & Diagnostics
+- Disk, memory, CPU, uptime and process information is read locally and only when you request it (via the Settings **Run Vitals Check** button or a chat command).
+- Results are displayed in the moment and are **not persisted** to the Brain Database or sent anywhere.
+- Update checks defer to your operating system's package manager. Installing updates only happens when you explicitly request it, and only on desktop platforms.
 
 ### World Information
 - Weather and news requests are made to third-party APIs.

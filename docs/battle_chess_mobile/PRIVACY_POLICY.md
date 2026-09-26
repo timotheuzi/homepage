@@ -6,7 +6,7 @@
 
 **Owner:** Dark Work & timotheuzi@hotmail.com
 
-**Effective Date:** August 2026
+**Effective Date:** August 2026 (last reviewed September 2026)
 
 ---
 
@@ -78,7 +78,7 @@ All data is used exclusively for the following purposes within the application o
 
 **Nearby Devices / Local Network**
 - Purpose: Local multiplayer
-- Usage: Discover and connect to other devices on the same Wi-Fi/LAN
+- Usage: Discover and connect to other devices on the same Wi-Fi/LAN, or over Bluetooth using the Nearby Connections API
 - Data: Broadcasted game ID and device name
 
 ---
@@ -122,7 +122,7 @@ If you have questions about this privacy policy or the app:
 
 ---
 
-**Last Updated:** August 2026
+**Last Updated:** September 2026
 **Version:** 1.0.0
 
 © 2026 Dark Work & timotheuzi@hotmail.com. All rights reserved.

@@ -1,156 +1,78 @@
-# Dark Work Labs
+# Darkwork Labs
 
-**Package Name:** `com.darkwork.labs`  
-**Version:** 1.0.0+1  
-**Platform:** Android & Linux  
-**Framework:** Flutter (Dart ≥ 3.0)
+**Application:** Darkwork Labs
+**Android package:** `com.darkwork.labs`
+**Version:** 1.0.0+1
+**Platforms:** Android and Linux
+**Framework:** Flutter / Dart
 
-A comprehensive security monitoring application built with Flutter, designed for Android and Linux. Dark Work Labs acts as a digital sentinel, providing real-time oversight of your digital and physical environment.
+Darkwork Labs is a local-first security monitoring application. It brings Bluetooth and network discovery, hardware telemetry, system monitoring, filesystem integrity scanning, event logging, and SDR status monitoring into one responsive Flutter interface.
 
-**All data processing and storage occurs exclusively on your device; no data is ever transmitted or saved outside of your phone.**
+> **Educational use only:** This application is provided for learning, experimentation, and authorized defensive research. It is not professional security advice or a guarantee of protection. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use this application. Use it only on systems and data you are authorized to inspect, and independently verify every result before taking action.
 
-## 🚀 Overview
+The current UI is a monitoring and inspection tool. It does not include a cloud backend, AI/LLM analysis, or a Windows target. Availability of individual sensors, network data, filesystem access, and SDR features depends on the platform and permissions.
 
-Dark Work Labs provides real-time oversight of your digital and physical environment. Under the watchful eye of the **Great Defender** — a custom-painted Sentinel Shield icon featuring a deep obsidian shield, premium gold frame, and amethyst iris — it monitors network traffic, Bluetooth signals, and hardware sensor data.
+## Features
 
-## ✨ Features
+- **Dashboard:** security status, perimeter scan trigger, Bluetooth/network counts, discovery overview, and theme toggle.
+- **Device discovery:** Bluetooth/BLE and local network device lists with type filtering and refresh.
+- **Network security:** network scanning, port/service assessment, security reports, and event logs.
+- **Sensor monitor:** accelerometer, gyroscope, magnetometer, ambient light, battery, and location streams when available.
+- **System monitor:** device information, CPU, memory, battery, network identity, sockets, and metric aggregates.
+- **File integrity scan:** configurable local scan with progress, risk classification, and result details.
+- **Event logs:** locally retained application events with level-based display and date filtering.
+- **Radio monitor:** SDR hardware detection and spectrum/status information.
+- **Settings:** application settings and appearance controls exposed by the current UI.
 
-### 🔍 Network & WiFi Sentinel
-- **Automated Reconnaissance**: Scans local networks for nodes and open ports.
-- **WiFi Security**: Detects Rogue Access Points, Evil Twin attacks, and unencrypted networks.
+## Architecture
 
-### 📡 Bluetooth & RF Surveillance
-- **AirTag Identification**: Monitors BLE for Apple AirTags and Find My network-enabled trackers.
-- **RF Spectrum Monitor**: Integration with external SDR hardware (RTL-SDR) to detect Sub-GHz surveillance signals.
+The app uses Flutter Material 3 and Provider-based `ChangeNotifier` services:
 
-### 📊 Hardware Telemetry
-- **Real-time Streams**: Live monitoring of Accelerometer, Gyroscope, Magnetometer, and Ambient Light.
-- **System Vitals**: Detailed tracking of CPU, memory, battery health, and active network sockets.
+- `SecurityService` — perimeter scanning and device discovery.
+- `NetworkSecurityService` — network host, port, and security checks.
+- `SensorService` — hardware sensor streams.
+- `SystemMonitorService` — system and performance telemetry.
+- `FilesystemScannerService` — local file scanning.
+- `RadioFrequencyService` — SDR detection and radio status.
+- `LoggingService` and `DatabaseService` — local event/log persistence.
+- `ThemeService` — light/dark Material 3 themes and shared colors.
 
-### 📁 File Integrity Scanner
-- **Deep Analysis**: Scans local file systems for suspicious patterns, dangerous extensions, and risk indicators.
-- **Risk Classification**: Categorises findings as Low, Medium, or High risk with detailed metadata.
+Screens are under `lib/screens/`, reusable presentation is under `lib/widgets/`, and tests are under `test/`.
 
-### 📝 Logging & Intelligence
-- **System Event Logs**: Real-time and historical log entries with date filtering and level-based colour coding.
-
-## 🎨 The Great Defender UI
-- **Unified Dashboard**: Real-time security status provided by the Sentinel Shield with gradient status header.
-- **Premium Design Language**: Consistent, refined visual identity across all security modules with a centralised colour palette (`AppColors`).
-- **Dark & Light Themes**: Beautifully crafted Material 3 themes with amethyst/cyan accent colours and gold shield framing.
-- **Responsive Layouts**: Adaptive screens with scrollable empty states and loading indicators.
-
-## 🏗️ Architecture
-
-### State Management
-- **Provider** (`package:provider`) — `ChangeNotifier` + `MultiProvider` pattern.
-- All services extend `ChangeNotifier` and are registered in `main.dart`.
-
-### Services (`lib/services/`)
-| Service | Responsibility |
-|---------|---------------|
-| `SecurityService` | Core security monitoring, device discovery |
-| `NetworkSecurityService` | Network scanning, port discovery |
-| `SensorService` | Hardware sensor data collection (accelerometer, gyroscope, etc.) |
-| `SystemMonitorService` | System vitals: CPU, memory, battery, network connections |
-| `RadioFrequencyService` | SDR hardware detection and RF spectrum monitoring |
-| `FilesystemScannerService` | File system integrity scanning and risk analysis |
-| `LoggingService` | Centralised event logging with historical retrieval |
-| `DatabaseService` | Local SQLite database for persistent storage |
-| `ThemeService` | Centralised theming with `AppColors` palette |
-
-### Models (`lib/models/`)
-| Model | Description |
-|-------|-------------|
-| `Device` | Network, Bluetooth, WiFi, and AirTag device data |
-
-### Screens (`lib/screens/`)
-| Screen | Purpose |
-|--------|---------|
-| `DashboardScreen` | Main command center with status header, quick stats |
-| `DeviceListScreen` | Discovered device management with filtering |
-| `NetworkSecurityScreen` | Network scanner, security report, and logs (tabbed) |
-| `SensorMonitorScreen` | Real-time hardware sensor telemetry |
-| `SystemMonitorScreen` | System vitals, network identity, and active sockets |
-| `RadioMonitorScreen` | RF spectrum monitoring and SDR device detection |
-| `FilesystemScannerScreen` | File integrity scanning with risk classification |
-| `LoggingScreen` | System event logs with date filtering and level colours |
-| `SettingsScreen` | System settings and appearance configuration |
-
-### Widgets (`lib/widgets/`)
-| Widget | Description |
-|--------|-------------|
-| `AncientShieldIcon` | Custom-painted Sentinel Shield with gold frame and amethyst iris |
-
-## 🔧 Build & Development
+## Development
 
 ### Prerequisites
-- Flutter SDK ≥ 3.0
-- Dart SDK ≥ 3.0
-- Android Studio / VS Code with Flutter plugin
-- For Linux: `clang`, `cmake`, `ninja-build`, `pkg-config`, `libgtk-3-dev`, `liblzma-dev`
 
-### Make Targets
+- Flutter 3.x with Dart 3.x
+- Android toolchain for Android builds
+- Linux GTK build dependencies for Linux builds
+
+### Common commands
+
 ```bash
-make get          # Fetch Dart dependencies
-make lint         # Run static analysis (flutter analyze)
-make test         # Run unit tests
-make icons        # Generate launcher icons
-make run-android  # Run on Android device
-make run-linux    # Run on Linux
-make build-android    # Build debug APK
-make build-linux      # Build debug Linux bundle
-make release-android  # Build signed release APK
-make release-bundle   # Build signed Google Play AAB
-make release-linux    # Build release Linux bundle
-make clean        # Remove build artifacts
-make nuclear      # Full cache cleanup (Gradle, Pub, Build)
-make all          # get, lint, test, build-android, build-linux
+flutter pub get
+flutter analyze
+flutter test
+flutter run -d android
+flutter run -d linux
+flutter build apk --debug
+flutter build linux --debug
 ```
 
-### Key Dependencies
-| Package | Purpose |
-|---------|---------|
-| `provider` | State management |
-| `fl_chart` | Charting and data visualisation |
-| `flutter_blue_plus` | Bluetooth device discovery |
-| `network_info_plus` | Network interface information |
-| `sensors_plus` | Hardware sensor streams |
-| `battery_plus` | Battery status monitoring |
-| `geolocator` | GPS location access |
-| `permission_handler` | Runtime permission management |
-| `sqflite` / `sqflite_common_ffi` | Local SQLite database |
-| `shared_preferences` | First-launch flag persistence |
-| `font_awesome_flutter` | Extended icon set |
-| `animations` | Material motion transitions |
-| `intl` | Date/time formatting |
-| `dart_ping` | Network host discovery |
-| `wakelock_plus` | Keep screen awake during scans |
+The repository also provides equivalent convenience targets in `Makefile` (for example `make get`, `make lint`, `make test`, and `make build-android`). The `Makefile` assumes Flutter is installed at `~/flutter/bin/flutter`; the direct Flutter commands above are portable when Flutter is on `PATH`.
 
-## 📂 Project Structure
-```
-darkworklabs/
-├── lib/
-│   ├── main.dart                    # App entry point & MultiProvider setup
-│   ├── models/                      # Data models (Device)
-│   ├── services/                    # Business logic & data services
-│   ├── screens/                     # Feature screens
-│   └── widgets/                     # Reusable UI components
-├── assets/icon/                     # App icon (SVG + PNG)
-├── android/                         # Android platform config
-├── linux/                           # Linux platform config
-├── test/                            # Unit tests
-├── docs/                            # Documentation
-├── Makefile                         # Build system targets
-├── pubspec.yaml                     # Flutter project manifest
-└── analysis_options.yaml            # Dart linter configuration
-```
+## Platform and permissions
 
-## 📖 Documentation
-- [User Guide](USER_GUIDE.md) — Comprehensive feature guide
-- [Privacy Policy](PRIVACY_POLICY.md) — Data collection and privacy practices
+Android declares internet, network-state, Wi-Fi-state, Bluetooth, location, notification, and storage-related permissions in `android/app/src/main/AndroidManifest.xml`. Runtime location and Bluetooth permissions are requested on the first launch on supported mobile platforms. Linux has no Android permission dialogs; platform feature support varies by host and hardware.
 
-## ⚖️ License
+## Documentation
 
-**Copyright (c) 2025-2026 Dark Work Labs & timotheuzi@hotmail.com**  
-Proprietary Software. All Rights Reserved.
+- [User Guide](USER_GUIDE.md)
+- [Privacy Policy](PRIVACY_POLICY.md)
+- [Google Play Upload Guide](GOOGLE_PLAY_UPLOAD_GUIDE.md)
+- [Release Summary](RELEASE_SUMMARY.md)
+- [License](LICENSE.md)
+
+## Ownership
+
+Copyright © 2025–2026 Darkwork Labs and timotheuzi@hotmail.com. Proprietary software; see [LICENSE.md](LICENSE.md).

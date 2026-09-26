@@ -10,7 +10,9 @@ When you first open the app, you'll be greeted by **Zombie Tim** himself. He mig
 
 1.  **Launch the App**: Open Zombie Tim on your Android, iOS, Web, Linux, Windows, or macOS device.
 2.  **Initialize**: On first run, Tim sets up his "Brain Database" (SQLite) to remember your interactions.
-3.  **Start Chatting**: Use the bottom navigation to jump between screens.
+3.  **Start Chatting**: Use the bottom navigation to jump between screens. The Chat header always reminds you: type **`help`** to see every command Tim knows.
+
+> 💡 **Lost?** Type **`help`** (or **`what can you do`**) at any time. If you're building Zombie Tim yourself, see the [README](./README.md) for `make` targets and release-signing instructions.
 
 ---
 
@@ -19,7 +21,7 @@ When you first open the app, you'll be greeted by **Zombie Tim** himself. He mig
 The app has three main screens accessible via the bottom navigation bar:
 1. **Chat (💬)**: The main interface for talking to Tim. Interact with Tim's animated avatar and enjoy the blood-splattered UI.
 2. **Scan (🔍)**: Tim can help you look through your device's storage or "sniff out" new vocabulary from the internet.
-3. **Settings (⚙️)**: Customize Tim's behavior, manage permissions, and view "Brain Stats."
+3. **Settings (⚙️)**: View Tim's Brain Stats, manage permissions, and reset his memory.
 
 ---
 
@@ -30,32 +32,42 @@ Tim loves to talk, especially about **Brains** and **Technology**.
 ### 🧠 Special Commands
 Type naturally or use specific keywords to trigger Tim's specialized logic:
 
+- **`help`** or **`what can you do`**: Tim lists every command he knows (his "learning stuff" included).
 - **`eat word <word>`**: Tells Tim to look up a specific word and add it to his vocabulary.
-- **`vocabulary`**: Shows a summary of what Tim has learned recently.
-- **`brain stats`**: Displays Tim's current IQ and total word count.
-- **`generate code <language> <description>`**: Tim simplifies complex tech topics or writes snippets in Python, Dart, C++, etc.
+- **`vocabulary`** or **`brain stats`**: Shows a summary of what Tim has learned (words eaten, recently eaten, brain capacity, IQ).
+- **`intelligence`**: Check Tim's current IQ and rank.
 - **`magic 8 ball <question>`**: Ask Tim to predict the future!
+- **`summarize`**, **`remember`**, or **`session`**: Tim recounts your current session *and* his long-term memory (your name, likes, and facts you've taught him).
 - **`clear chat`**: Wipes Tim's short-term memory.
+
+### 🧬 Teaching Tim
+Tim learns permanently from plain sentences you type — no special syntax needed:
+- **Facts**: *"the capital of France is Paris"* — he stores it and answers later questions like *"what is the capital of France?"*, even if you rephrase them.
+- **Your name**: *"my name is …"* / *"call me …"* — he'll use it in greetings and recall it after restarts.
+- **Your likes**: *"I like …"* — accumulated over time, not overwritten.
+- **Your identity**: *"I am a developer"* — remembered for `who am i?`.
+- New words from every message are absorbed in bulk; Tim quietly fetches real definitions for them in the background so he never quotes a placeholder at you.
 
 ### 📝 Personal Assistant
 Tim can help you manage your decaying life with his proactive assistant capabilities:
 
 #### Reminders
-- **`remind me to [task] at [time]`**: Set a reminder for a specific time (e.g., "remind me to eat brains at 3pm").
-- **`remind me to [task] in [duration]`**: Set a relative reminder (e.g., "remind me to sharpen teeth in 2 hours").
+- **`remind me to [task] in [duration]`**: Set a relative reminder (e.g., "remind me to sharpen teeth in 2 hours" — minutes, hours, or days all work).
+- **`remind me to [task] at [time]`**: Set a clock-time reminder (e.g., "remind me to eat brains at 5pm" or "at 17:30"). Past times roll to tomorrow.
+- **`remind me to [task]`**: No time given? Tim defaults to about an hour from now.
 - **`show reminders`**: Lists your upcoming reminders.
 
 #### Tasks
-- **`add task [description] due [date]`**: Add a new task (e.g., "add task fix the fence due tomorrow").
-- **`complete task [id]`**: Mark a task as finished.
-- **`show tasks`**: See your pending tasks.
+- **`add task [description]`**: Add a new task (e.g., "add task fix the fence").
+- **`show tasks`** or **`pending tasks`**: See your pending tasks with their IDs.
 - **`overdue tasks`**: Check what you missed (Tim will judge you).
+- **`complete task [id]`**: Mark a task as finished.
 
 #### Notes
 - **`take note [content]`**: Quickly save a note.
-- **`take note [title]: [content]`**: Save a note with a specific title.
+- **`show notes`** or **`my notes`**: List your saved notes.
 - **`find note [query]`**: Search through your saved notes.
-- **`show notes`**: List your saved notes.
+- **`daily summary`**: An at-a-glance summary of your day.
 
 ### 🌍 World Information
 Ask Tim about the world around you:
@@ -64,19 +76,18 @@ Ask Tim about the world around you:
 - **`news`** or **`latest news`**: Get the latest headlines from the internet.
 - **`stock [symbol]`**: Ask about stock prices (Tim has his own unique perspective on capitalism).
 
-### 🐦 Social Media (X/Twitter)
-Tim can interact with X/Twitter:
-- **`twitter login [api_key] [api_secret]`**: Log in to X/Twitter with your API credentials.
-- **`twitter search [query]`** or **`tweets about [query]`**: Search for recent tweets.
-- **`twitter reply [tweet_id] [message]`**: Reply to a tweet.
+### 🩺 System Health (all platforms)
+- **`system health`** or **`health check`**: Tim checks up on your device.
+- **`check updates`**: Look for OS updates.
+- **`run diagnostics`**: Check for device issues (disk, memory, CPU).
+- **`update system`**: Install available updates (with Tim's guidance).
 
 ### 💻 System Integration (Desktop Only)
 On Linux, Windows, and macOS, Tim can help with system tasks:
-- **`system status`**: Get a report about your system (OS, version, uptime, etc.).
+- **`system status`** or **`system info`**: Get a report about your system (OS, version, uptime, etc.).
+- **`suggest tasks`** or **`what should I do`**: Platform-specific maintenance ideas.
 - **`run command [command]`**: Execute system commands (Linux/Windows only).
-- **`admin command [command]`**: Run commands with administrator privileges (Linux/Windows only).
-- **`list files [path]`**: List files in a directory.
-- **`open [url]`**: Open URLs in your default browser.
+- **`run admin command [command]`**: Run commands with administrator privileges (Linux/Windows only).
 
 ### 🔒 Security Monitoring
 Tim can perform security audits on your system:
@@ -98,26 +109,46 @@ Use this screen to help Tim "forage" for information on your device or the inter
 - **Scan Brains (Internal)**: Scans the app's internal storage.
 - **Scan Graveyard (External)**: Scans your device's external storage.
 - **Sniff Directory**: Pick a specific folder for Tim to examine.
+- **Chew File**: Have Tim examine a single file.
 
 ### Vocabulary Feasts
-- **Mass Vocabulary Feast**: Tim reaches out to the internet and devours **50 random words** at once to boost his IQ instantly.
+- **Mass Vocabulary Feast**: Tim reaches out to the internet and devours **5,000 random words** at once (fetched in parallel, then stored in one transaction) to boost his IQ instantly. Definitions are filled in from the dictionary API where available.
 
 ---
 
 ## ⚙️ Settings & Stats
 
-- **Clear Brain**: Reset everything Tim has learned.
-- **Database Size**: See how much space Tim's memories are taking up.
-- **Status**: Check if Tim is feeling particularly "hungry" or "smart."
-- **Brain Stats**: View detailed statistics including conversations, words eaten, knowledge base size, and activities.
+The Settings screen has four sections:
+
+### 🧠 Brain Stats
+- **Conversations**, **Words Learned**, **Knowledge Base**, **Activities**, and **Database Size** — live counters for everything Tim remembers.
+
+### 🔑 Permissions
+- **Read Storage** / **Write Storage**: Status of the storage permissions Tim uses for file scanning.
+
+### 🩺 System Health
+Tim keeps an eye on the machine he's shambling around in:
+- **Run Vitals Check**: Gathers a health report and shows a **Health Score** (0–100) along with:
+    - **Disk Usage** — used percentage of total space
+    - **Memory Usage** — used percentage of total RAM
+    - **CPU Load** — current load percentage
+    - **Uptime** — how long the device has been running
+    - **Processes** — number of running processes
+- **Detected Issues**: Any problems Tim sniffs out (low disk, heavy memory use, high load, etc.).
+- **Install Updates**: Appears when Tim finds OS updates. Mobile platforms are report-only — Tim can only actually install desktop OS updates.
+
+The same information is available from chat with **`system health`**, **`check updates`**, **`run diagnostics`**, and **`update system`**.
+
+### 💀 Danger Zone
+- **Clear Brain**: Deletes **all conversations, learned words, and knowledge** — a true factory reset for Tim's memory. (This cannot be undone!)
 
 ---
 
 ## 🆘 Support & Feedback
 
 If Tim becomes too "braindead" or encounters an error:
-1.  Go to **Settings** -> **Clear Knowledge Base** to reset his database.
-2.  Check the `README.md` for technical troubleshooting.
+1.  Go to **Settings** -> **Danger Zone** -> **Clear Brain** to reset his memory (conversations, words, and knowledge).
+2.  Check the `README.md` for project information.
 3.  Contact the creators at `timotheuzi@hotmail.com`.
 
 ---

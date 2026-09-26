@@ -1,0 +1,35 @@
+# Nervous? - Nervousness & Polygraph Monitor
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.13+-blue.svg)](https://flutter.dev)
+[![Flame Engine](https://img.shields.io/badge/Flame_Engine-1.38+-orange.svg)](https://flame-engine.org)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)]()
+
+**Nervous?** is a state-of-the-art Flutter mobile application developed by **Dark Work LLC**. It measures real-time nervousness, anxiety, and physiological stress using phone sensors (accelerometer/gyroscope tremor analysis) and paired smartwatch biometric telemetry (Heart Rate, HRV, Skin Temperature).
+
+**🔒 100% Local Processing**: No third parties and no data ever leaves your phone. All telemetry and session history remain strictly on-device.
+
+© 2026 Dark Work LLC. All rights reserved.
+
+---
+
+## Best Practices: How to Hold the Phone
+- Hold the phone upright in your hand or rest your hand lightly on a flat surface (desk/table).
+- Keep your hand relaxed to allow sensors to capture micro-tremors without arm movement interference.
+
+---
+
+## Key Features
+- **Standalone or Companion Mode**: Works with or without a paired smartwatch.
+- **Nervous? Dashboard & Interactive Cards**
+- **Flame-Powered Polygraph / Lie Detector with Full Post-Test Reports** (timings, baseline stats, stress deltas)
+- **Smartwatch Companion & Sensitivity Calibration**
+
+---
+
+## Legal Disclaimer
+*For educational and entertainment uses only, no guarantees. The developer and Dark Work LLC provide no warranties and assume no responsibility for any actions or decisions made using this software.*
+
+---
+
+## License & Copyright
+Copyright © 2026 Dark Work LLC. All rights reserved.
