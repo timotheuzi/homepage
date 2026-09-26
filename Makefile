@@ -1,13 +1,16 @@
-.PHONY: all lint clean build run kill help
+.PHONY: all lint test clean build run kill help
 
 # Configuration
 PORT ?= 5000
 
-all: lint build run
+all: lint test build run
 
 lint:
 	pip install pylint --break-system-packages
 	pylint src/app.py
+
+test:
+	python3 -m unittest discover -s tests
 
 clean: kill
 	find . -type f -name '*.pyc' -delete
@@ -31,8 +34,9 @@ kill:
 
 help:
 	@echo "Available targets:"
-	@echo "  all    - Run lint, build, and run in sequence"
+	@echo "  all    - Run lint, test, build, and run in sequence"
 	@echo "  lint   - Install and run pylint on src/app.py"
+	@echo "  test   - Run unit tests"
 	@echo "  clean  - Kill running instances and remove .pyc files"
 	@echo "  build  - Kill running instances and install dependencies"
 	@echo "  run    - Run the application on port $(PORT)"
