@@ -4,19 +4,19 @@
 **Application:** Battle Chess  
 **Version:** 1.0.0
 
-**Copyright (c) 2026 Dark Work & timotheuzi@hotmail.com**
+**Copyright (c) 2026 Dark Work Factory & timotheuzi@hotmail.com**
 
 ## 1. Ownership
 
-This software, Battle Chess, is the exclusive intellectual property of **Dark Work** and **timotheuzi@hotmail.com**. All rights are reserved.
+This software, Battle Chess, is the exclusive intellectual property of **Dark Work Factory** and **timotheuzi@hotmail.com**. All rights are reserved.
 
 ## 2. License Grant
 
 **NO LICENSE GRANTED**
 
-This software is **NOT FREE** and is **NOT OPEN SOURCE**. Battle Chess is a proprietary, commercial software product owned and controlled exclusively by **Dark Work** and **timotheuzi@hotmail.com**.
+This software is **NOT FREE** and is **NOT OPEN SOURCE**. Battle Chess is a proprietary, commercial software product owned and controlled exclusively by **Dark Work Factory** and **timotheuzi@hotmail.com**.
 
-**All Rights Reserved.** No permission is granted to use, copy, modify, distribute, or otherwise exploit this software without explicit written permission from Dark Work.
+**All Rights Reserved.** No permission is granted to use, copy, modify, distribute, or otherwise exploit this software without explicit written permission from Dark Work Factory.
 
 ## 3. Usage Restrictions
 
@@ -34,10 +34,10 @@ This software is **NOT FREE** and is **NOT OPEN SOURCE**. Battle Chess is a prop
 ## 4. Commercial Licensing & Contact
 
 For commercial licensing inquiries, contact:
-**Dark Work**
+**Dark Work Factory**
 **Email:** timotheuzi@hotmail.com
 
-All commercial licenses are subject to separate written agreements and fees determined by Dark Work at its sole discretion.
+All commercial licenses are subject to separate written agreements and fees determined by Dark Work Factory at its sole discretion.
 
 ## 5. Disclaimer of Warranty & Guarantees
 
@@ -45,7 +45,7 @@ THIS SOFTWARE IS PROVIDED FOR EDUCATIONAL AND ENTERTAINMENT PURPOSES ONLY, "AS I
 
 ## 6. Limitation of Liability
 
-In no event shall Dark Work or timotheuzi@hotmail.com be liable for any direct, indirect, incidental, special, exemplary, or consequential damages or liability for anything arising in any way out of the use of this software.
+In no event shall Dark Work Factory or timotheuzi@hotmail.com be liable for any direct, indirect, incidental, special, exemplary, or consequential damages or liability for anything arising in any way out of the use of this software.
 
 ---
 

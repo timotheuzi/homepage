@@ -86,4 +86,4 @@ make bundle
 ```
 
 ## License
-Proprietary — Copyright (c) 2026 Dark Work. All rights reserved. See [LICENSE](LICENSE) for the full terms.
+Proprietary — Copyright (c) 2026 Dark Work Factory. All rights reserved. See [LICENSE](LICENSE) for the full terms.

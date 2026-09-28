@@ -4,7 +4,7 @@
 **Application:** Battle Chess
 **Version:** 1.0.0
 
-**Owner:** Dark Work & timotheuzi@hotmail.com
+**Owner:** Dark Work Factory & timotheuzi@hotmail.com
 
 **Effective Date:** August 2026 (last reviewed September 2026)
 
@@ -125,4 +125,4 @@ If you have questions about this privacy policy or the app:
 **Last Updated:** September 2026
 **Version:** 1.0.0
 
-© 2026 Dark Work & timotheuzi@hotmail.com. All rights reserved.
+© 2026 Dark Work Factory & timotheuzi@hotmail.com. All rights reserved.

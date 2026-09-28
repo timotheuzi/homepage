@@ -73,4 +73,4 @@ This software is provided for educational and entertainment purposes only, "as i
 
 ---
 
-© 2026 **Dark Work** & **timotheuzi@hotmail.com**. Proprietary Software.
+© 2026 **Dark Work Factory** & **timotheuzi@hotmail.com**. Proprietary Software.
