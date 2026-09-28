@@ -25,26 +25,6 @@ A visceral, cartoon-style chess game built with **Flutter** and the **Flame engi
 ## Legal Disclaimer
 This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
 
-## Project Layout
-
-```
-lib/
-  main.dart                  # Flutter app shell, Material UI, theme switcher & captured tray
-  game/
-    board_game.dart          # FlameGame logic, rendering, highlights, and screen shake
-    board_theme.dart         # Board themes definitions (Wood, Marble, Cyber, Midnight)
-    fx_components.dart       # Shockwave rings, combat hit text, dust particles & check aura
-    chess_engine.dart        # Rules engine (Pure Dart)
-    chess_ai.dart            # Minimax AI with persistent learning
-    grandmaster_patterns.dart # Classic tactical pattern library for the AI
-    learning_database.dart   # SQLite storage for move weights and experience
-    multiplayer_manager.dart # Local P2P socket communication
-    piece.dart               # Piece model & color definitions
-    piece_sprites.dart       # Custom 3D-shaded cartoon vector painters
-    piece_component.dart     # Flame components with drop shadows, hop dust & fatalities
-    game_icon.dart           # Reusable vector app icon widget
-```
-
 ## License
 
 **Proprietary License**
