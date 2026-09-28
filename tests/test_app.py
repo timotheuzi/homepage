@@ -18,6 +18,13 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Dark Work', response.data)
 
+    def test_static_logo(self):
+        """Test that the static logo image is accessible."""
+        response = self.client.get('/static/images/dark_work_logo.svg')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'<svg', response.data)
+        response.close()
+
     def test_project_pages(self):
         """Test each project page."""
         for project in PROJECTS:
