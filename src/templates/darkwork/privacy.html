@@ -3,53 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Work Factory Labs - Privacy Policy - Dark Work Factory</title>
+    <title>Darkworks Lab - Privacy Policy - Dark Work Factory</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container document-content">
-    <h1>Privacy Policy for Dark Work Factory Labs</h1>
+    <h1>Privacy Policy</h1>
 
-    <p><strong>Package Name:</strong> <code>com.darkwork.labs</code><br>
-    <strong>Application:</strong> Dark Work Factory Labs<br>
-    <strong>Version:</strong> 1.0.0+1</p>
+    <p><strong>Application:</strong> Darkworks Lab<br>
+    <strong>Android package:</strong> <code>com.darkworks.lab</code><br>
+    <strong>Version:</strong> 1.0.0+1<br>
+    <strong>Effective date:</strong> August 1, 2026</p>
 
-    <p><strong>Owner:</strong> Dark Work Factory & timotheuzi@hotmail.com</p>
+    <h2>Educational use and limitation of responsibility</h2>
+    <p>Darkworks Lab is provided for educational purposes, learning, experimentation, and authorized defensive research only. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use this application.</p>
 
-    <hr>
+    <h2>Summary</h2>
+    <p>Darkworks Lab performs its monitoring and analysis on the device where it is installed. The app does not operate a server for user data and does not intentionally transmit scan results, logs, sensor readings, filesystem results, or radio observations.</p>
+    <p>Third-party Flutter packages and platform APIs can have their own behavior. The dependency list includes networking and device-access packages; users should review package licenses and platform disclosures before distribution.</p>
 
-    <h2>1. Introduction</h2>
-    <p><strong>Important Note on Data Storage:</strong> All data collected, processed, and stored by Dark Work Factory Labs remains exclusively on your device. Nothing is stored on our servers or any external location other than your own device. We do not operate any servers for data storage or processing of user information. <strong>No data is saved outside of the phone.</strong></p>
-
-    <h2>2. Information We Collect</h2>
-    <p>Since all data remains on your device, we do not collect any personal information from you. The application processes the following types of data locally:</p>
+    <h2>Information processed locally</h2>
+    <p>Depending on permissions, hardware, platform, and the features used, the app may process:</p>
     <ul>
-        <li>Device Information</li>
-        <li>Network Information</li>
-        <li>Bluetooth Information</li>
-        <li>Sensor Data</li>
-        <li>System Information</li>
-        <li>File System Information</li>
+        <li>Bluetooth device identifiers, names, addresses, signal strength, and advertisements.</li>
+        <li>Local network device names, addresses, interface details, host reachability, and open-port results.</li>
+        <li>Sensor readings such as accelerometer, gyroscope, magnetometer, ambient light, location, and battery state.</li>
+        <li>System telemetry such as device information, CPU, memory, battery, network interfaces, and sockets.</li>
+        <li>File names, paths, metadata, and scanner findings from locations available to the app.</li>
+        <li>SDR hardware status and radio-frequency observations when supported hardware is connected.</li>
+        <li>Application events, settings, and locally persisted logs.</li>
     </ul>
 
-    <h2>3. How We Use Information</h2>
-    <p>All data is used exclusively for the following purposes within the application on your device:</p>
-    <ul>
-        <li>Security Monitoring</li>
-        <li>Threat Detection</li>
-        <li>Application Functionality</li>
-        <li>User Experience</li>
-    </ul>
+    <h2>How information is used</h2>
+    <p>Information is used on-device to display monitoring status, perform scans, calculate local metrics, classify findings, and provide reports and logs. It is not used for advertising or an account-based service.</p>
 
-    <h2>4. Legal Disclaimer</h2>
-    <p>THIS SOFTWARE IS PROVIDED FOR EDUCATIONAL AND ENTERTAINMENT PURPOSES ONLY, "AS IS" WITH NO GUARANTEES, NO WARRANTY OF ANY KIND, AND NO LIABILITY FOR ANYTHING.</p>
+    <h2>Permissions</h2>
+    <p>Android permissions cover network access/state, Wi-Fi state, Bluetooth scanning/connectivity, location, notifications, and storage-related access. Runtime location and Bluetooth permissions are requested on the first launch on supported mobile platforms. Linux behavior depends on the host operating system and user account.</p>
+    <p>The app does not require every permission for every feature. Granting a permission increases the data and device capabilities available to that feature.</p>
 
-    <h2>5. Contact Information</h2>
-    <p>If you have questions about this privacy policy or the app:<br>
-    <strong>Email</strong>: timotheuzi@hotmail.com</p>
+    <h2>Storage, sharing, and retention</h2>
+    <p>Logs and scan data are retained only as implemented by the relevant local service and platform storage. Data is not intentionally shared with third parties. Uninstalling the app normally removes app-private data; the user remains responsible for backups and exported files. The app provides no cloud account, cloud sync, or remote monitoring service.</p>
 
-    <hr>
-    <p>© 2025-2026 Dark Work Factory & timotheuzi@hotmail.com. All rights reserved.</p>
+    <h2>User choices and deletion</h2>
+    <p>Users can stop scans, disable streams where the UI exposes controls, clear supported logs/results, and uninstall the app to remove app-private data. Exported data must be removed by the user from the selected destination.</p>
+
+    <h2>Limitations</h2>
+    <p>A clean scan is not a guarantee of privacy, security, or absence of threats. The app cannot inspect inaccessible files, unavailable sensors, unsupported devices, or networks outside its reach.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed to children under 18. Do not use it to collect information about children.</p>
+
+    <h2>Contact and changes</h2>
+    <p>Questions: timotheuzi@hotmail.com</p>
+    <p>This policy may change as features and dependencies change. The current source and release documentation should be reviewed with each distribution.</p>
     </div>
 <div style="padding: 20px; text-align: left;"><a href="/{{ project }}" style="color: #007bff; text-decoration: none; font-weight: bold; font-size: 1.2em;">&larr; Back to {{ project_name }} Product Page</a></div>
 </body>

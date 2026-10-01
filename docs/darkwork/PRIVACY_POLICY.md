@@ -1,17 +1,17 @@
 # Privacy Policy
 
-**Application:** Darkwork Labs
-**Android package:** `com.darkwork.labs`
+**Application:** Darkworks Lab
+**Android package:** `com.darkworks.lab`
 **Version:** 1.0.0+1
 **Effective date:** August 1, 2026
 
 ## Educational use and limitation of responsibility
 
-Darkwork Labs is provided for educational purposes, learning, experimentation, and authorized defensive research only. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use this application. Users are responsible for legal authorization, backups, permissions, verifying results, and all decisions made from the output.
+Darkwork Lab is provided for educational purposes, learning, experimentation, and authorized defensive research only. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use this application. Users are responsible for legal authorization, backups, permissions, verifying results, and all decisions made from the output.
 
 ## Summary
 
-Darkwork Labs is designed to perform its monitoring and analysis on the device where it is installed. The app does not operate a server for user data and does not intentionally transmit scan results, logs, sensor readings, filesystem results, or radio observations to Darkwork Labs.
+Darkwork Lab is designed to perform its monitoring and analysis on the device where it is installed. The app does not operate a server for user data and does not intentionally transmit scan results, logs, sensor readings, filesystem results, or radio observations to Darkwork Lab.
 
 Third-party Flutter packages and platform APIs can have their own behavior. The app’s current dependency list includes networking and device-access packages; users should review package licenses and platform disclosures before distribution.
 
@@ -29,7 +29,7 @@ Depending on permissions, hardware, platform, and the features used, the app may
 
 ## How information is used
 
-Information is used on-device to display monitoring status, perform scans, calculate local metrics, classify findings, and provide the user with reports and logs. Darkwork Labs does not use the information for advertising or an account-based service.
+Information is used on-device to display monitoring status, perform scans, calculate local metrics, classify findings, and provide the user with reports and logs. Darkworks Lab does not use the information for advertising or an account-based service.
 
 ## Permissions
 

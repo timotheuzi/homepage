@@ -1,12 +1,12 @@
-# Darkwork Labs
+# Darkworks Lab
 
 **Application:** Darkwork Labs
-**Android package:** `com.darkwork.labs`
+**Android package:** `com.darkworks.lab`
 **Version:** 1.0.0+1
 **Platforms:** Android and Linux
 **Framework:** Flutter / Dart
 
-Darkwork Labs is a local-first security monitoring application. It brings Bluetooth and network discovery, hardware telemetry, system monitoring, filesystem integrity scanning, event logging, and SDR status monitoring into one responsive Flutter interface.
+Darkworks Lab is a local-first security monitoring application. It brings Bluetooth and network discovery, hardware telemetry, system monitoring, filesystem integrity scanning, and event logging into one responsive Flutter interface.
 
 > **Educational use only:** This application is provided for learning, experimentation, and authorized defensive research. It is not professional security advice or a guarantee of protection. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use this application. Use it only on systems and data you are authorized to inspect, and independently verify every result before taking action.
 

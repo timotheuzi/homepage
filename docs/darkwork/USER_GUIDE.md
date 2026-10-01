@@ -1,10 +1,10 @@
-# Darkwork Labs — User Guide
+# Darkworks Lab — User Guide
 
-**Package:** `com.darkwork.labs`
+**Package:** `com.darkworks.lab`
 **Version:** 1.0.0+1
 **Platforms:** Android and Linux
 
-Darkwork Labs is a local-first Flutter application for learning, experimentation, and authorized defensive research. It inspects local devices, network activity, hardware telemetry, storage, and system health. It is not professional security advice and does not guarantee detection or protection. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use the application. Use it only on systems and data you are authorized to inspect, and independently verify every result before taking action. Some features depend on device hardware, operating-system permissions, network access, and optional SDR equipment.
+Darkwork Lab is a local-first Flutter application for learning, experimentation, and authorized defensive research. It inspects local devices, network activity, hardware telemetry, storage, and system health. It is not professional security advice and does not guarantee detection or protection. The developer assumes no responsibility or liability for any loss, damage, data loss, security incident, system change, or other consequence arising from use or inability to use the application. Use it only on systems and data you are authorized to inspect, and independently verify every result before taking action. Some features depend on device hardware, operating-system permissions, network access, and optional SDR equipment.
 
 ## Getting started
 

@@ -21,7 +21,7 @@ PROJECTS = [
 PROJECT_NAMES = {
     'dumb_phone': 'Dumb Phone',
     'darknesses': 'Darknesses BBS',
-    'darkwork': 'Dark Work Labs',
+    'darkwork': 'Darkworks Lab',
     'zombie_tim': 'Zombie Tim',
     'battle_chess_mobile': 'Battle Chess',
     'nervous': 'Nervous?'
@@ -31,7 +31,7 @@ PROJECT_NAMES = {
 PROJECT_DESCRIPTIONS = {
     'dumb_phone': 'A comprehensive network security application for Android and iOS that provides real-time protection against threats, monitoring network traffic, and blocking malicious connections through two distinct firewall modes.',
     'darknesses': 'A professional multi-user, terminal-style cyberpunk RPG (MUD) built with Django. Explore a procedurally generated grid, engage in tactical combat, and compete with other users in a gritty neon-soaked world.',
-    'darkwork': 'A comprehensive, intelligent security monitoring application built with Flutter, designed for Android and Linux.',
+    'darkwork': 'Darkworks Lab is a local-first security monitoring application built with Flutter for Android and Linux. It brings Bluetooth and network discovery, hardware telemetry, system monitoring, filesystem integrity scanning, event logging, and SDR status into one responsive interface.',
     'zombie_tim': 'Zombie Tim is the world\'s first undead AI assistant with a gory, beautiful UI, enhanced intelligence, and word-learning capabilities!',
     'battle_chess_mobile': 'A visceral, cartoon-style chess game built with Flutter and the Flame engine. Featuring chunky pieces with big personalities and high-impact combat animations.',
     'nervous': 'A state-of-the-art Flutter mobile application developed by Dark Work Factory that measures real-time nervousness, anxiety, and physiological stress using phone sensors and paired smartwatch biometrics.'
