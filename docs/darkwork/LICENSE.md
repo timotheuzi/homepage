@@ -4,7 +4,7 @@
 **Application:** Darkworks Lab
 **Version:** 1.0.0+1
 
-**Copyright (c) 2025–2026 Darkworks Lab & timotheuzi@hotmail.com**
+**Copyright (c) 2025–2026 Darkworks Lab & darkworkllc@gmail.com**
 
 ## Educational use and limitation of responsibility
 
@@ -12,13 +12,13 @@ This software is provided for educational purposes, learning, experimentation, a
 
 ## Ownership and license
 
-Darkworks Lab is proprietary software owned and controlled by Darkworks Lab and timotheuzi@hotmail.com. All rights are reserved. No license to use, copy, modify, distribute, sublicense, reverse engineer, or create derivative works is granted except under a separate written agreement.
+Darkworks Lab is proprietary software owned and controlled by Darkworks Lab and darkworkllc@gmail.com. All rights are reserved. No license to use, copy, modify, distribute, sublicense, reverse engineer, or create derivative works is granted except under a separate written agreement.
 
 Third-party components remain subject to their respective licenses.
 
 ## Commercial licensing
 
-For licensing inquiries, contact **timotheuzi@hotmail.com**. Any commercial license, fees, terms, and distribution rights are governed by a separate written agreement.
+For licensing inquiries, contact **darkworkllc@gmail.com**. Any commercial license, fees, terms, and distribution rights are governed by a separate written agreement.
 
 ## Warranty disclaimer
 
@@ -34,6 +34,6 @@ Any rights granted by a separate written license terminate if its terms are viol
 
 ## Contact
 
-Darkworks Lab — timotheuzi@hotmail.com
+Darkworks Lab — darkworkllc@gmail.com
 
 **Last updated:** August 1, 2026

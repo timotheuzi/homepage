@@ -2,7 +2,7 @@
 
 **Copyright © 2026 Dark Work Factory. All rights reserved.**
 
-This software and associated documentation files (the "Software") are proprietary to Dark Work Factory. Contact: timotheuzi@hotmail.com
+This software and associated documentation files (the "Software") are proprietary to Dark Work Factory. Contact: darkworkllc@gmail.com
 
 1. **Restricted Use**: You are granted a limited, non-exclusive, non-transferable license to install and use the Software solely for personal, non-commercial evaluation purposes.
 2. **Prohibitions**: You may not reverse engineer, decompile, disassemble, modify, sublicense, rent, lease, or distribute the Software or any portion thereof without express written permission from Dark Work Factory.

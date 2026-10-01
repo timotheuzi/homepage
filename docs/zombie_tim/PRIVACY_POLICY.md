@@ -78,7 +78,7 @@ This software and its services are provided for educational and entertainment pu
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us at: timotheuzi@hotmail.com
+If you have any questions about this Privacy Policy, please contact us at: darkworkllc@gmail.com
 
 ## Data Retention
 

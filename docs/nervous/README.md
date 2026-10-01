@@ -27,7 +27,7 @@
 ---
 
 ## Legal Disclaimer
-*For educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.*
+*For educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact darkworkllc@gmail.com for support.*
 
 ---
 

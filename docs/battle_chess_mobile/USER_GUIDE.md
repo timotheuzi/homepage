@@ -69,8 +69,8 @@ Play across two different devices on the same Wi-Fi/LAN network using **Host Loc
 Play head-to-head without needing a Wi-Fi network using **Nearby (Bluetooth)**.
 
 ## Legal Disclaimer
-This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact darkworkllc@gmail.com for support.
 
 ---
 
-© 2026 **Dark Work Factory** & **timotheuzi@hotmail.com**. Proprietary Software.
+© 2026 **Dark Work Factory** & **darkworkllc@gmail.com**. Proprietary Software.

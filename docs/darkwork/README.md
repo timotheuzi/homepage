@@ -75,4 +75,4 @@ Android declares internet, network-state, Wi-Fi-state, Bluetooth, location, noti
 
 ## Ownership
 
-Copyright © 2025–2026 Darkwork Labs and timotheuzi@hotmail.com. Proprietary software; see [LICENSE.md](LICENSE.md).
+Copyright © 2025–2026 Darkwork Labs and darkworkllc@gmail.com. Proprietary software; see [LICENSE.md](LICENSE.md).

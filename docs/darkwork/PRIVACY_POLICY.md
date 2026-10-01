@@ -57,6 +57,6 @@ The app is not directed to children under 18. Do not use it to collect informati
 
 ## Contact and changes
 
-Questions: timotheuzi@hotmail.com
+Questions: darkworkllc@gmail.com
 
 This policy may change as features and dependencies change. The current source and release documentation should be reviewed with each distribution.

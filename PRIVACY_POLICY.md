@@ -32,4 +32,4 @@ We may update this policy periodically. Check this page for changes.
 
 ## Contact
 
-For questions, contact timotheuzi@hotmail.com.
+For questions, contact darkworkllc@gmail.com.

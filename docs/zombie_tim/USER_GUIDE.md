@@ -149,7 +149,7 @@ The same information is available from chat with **`system health`**, **`check u
 If Tim becomes too "braindead" or encounters an error:
 1.  Go to **Settings** -> **Danger Zone** -> **Clear Brain** to reset his memory (conversations, words, and knowledge).
 2.  Check the `README.md` for project information.
-3.  Contact the creators at `timotheuzi@hotmail.com`.
+3.  Contact the creators at `darkworkllc@gmail.com`.
 
 ---
 

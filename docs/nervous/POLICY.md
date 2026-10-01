@@ -17,4 +17,4 @@ Dark Work Factory ("we", "our", or "us") respects your privacy. **Nervous? proce
 **For educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. The developer and Dark Work Factory provide no warranties and assume no responsibility or liability for any actions, decisions, or outcomes made using this software.** Nervous? is not a medical device or certified polygraph instrument.
 
 ## 4. Contact Us
-For support inquiries, contact timotheuzi@hotmail.com.
+For support inquiries, contact darkworkllc@gmail.com.

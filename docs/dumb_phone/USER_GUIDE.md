@@ -154,7 +154,7 @@ The Settings screen provides comprehensive control with a beautiful card-based l
 - **Floating Notifications**: Feedback messages use modern floating snackbars with rounded corners.
 
 ## Legal Disclaimer
-This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact darkworkllc@gmail.com for support.
 
 ## Support
-For issues, questions, or contributions, contact timotheuzi@hotmail.com.
+For issues, questions, or contributions, contact darkworkllc@gmail.com.

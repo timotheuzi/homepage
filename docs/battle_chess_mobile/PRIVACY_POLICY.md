@@ -4,7 +4,7 @@
 **Application:** Battle Chess
 **Version:** 1.0.0
 
-**Owner:** Dark Work Factory & timotheuzi@hotmail.com
+**Owner:** Dark Work Factory & darkworkllc@gmail.com
 
 **Effective Date:** August 2026 (last reviewed September 2026)
 
@@ -116,7 +116,7 @@ We may update this privacy policy from time to time. Changes will be reflected i
 
 If you have questions about this privacy policy or the app:
 
-**Email**: timotheuzi@hotmail.com
+**Email**: darkworkllc@gmail.com
 **Application**: Battle Chess
 **Package**: com.battlechess.battle_chess_mobile
 
@@ -125,4 +125,4 @@ If you have questions about this privacy policy or the app:
 **Last Updated:** September 2026
 **Version:** 1.0.0
 
-© 2026 Dark Work Factory & timotheuzi@hotmail.com. All rights reserved.
+© 2026 Dark Work Factory & darkworkllc@gmail.com. All rights reserved.

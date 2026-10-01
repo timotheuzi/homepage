@@ -33,7 +33,7 @@ Dumb Phone is a powerful network security and privacy application for Android. I
 *   **Transparent Code**: Security logic implemented in Kotlin and Dart.
 
 ## Legal Disclaimer
-This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact darkworkllc@gmail.com for support.
 
 ## Development
 Use the provided `Makefile` for common tasks:

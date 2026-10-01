@@ -23,11 +23,11 @@ A visceral, cartoon-style chess game built with **Flutter** and the **Flame engi
 - **Full Chess Rules:** Legal move generation, castling, en passant, promotion, and checkmate detection.
 
 ## Legal Disclaimer
-This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact timotheuzi@hotmail.com for support.
+This software is provided for educational and entertainment purposes only, "as is" with no guarantees, no warranty of any kind, and no liability for anything. Contact darkworkllc@gmail.com for support.
 
 ## License
 
 **Proprietary License**
 
-© 2026 **Dark Work Factory** & **timotheuzi@hotmail.com**. All rights reserved.
+© 2026 **Dark Work Factory** & **darkworkllc@gmail.com**. All rights reserved.
 Created and owned by **Dark Work Factory**. Unauthorized copying, modification, or distribution of this software is strictly prohibited.
